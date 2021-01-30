@@ -60,8 +60,8 @@ class brushAds(object):
                     # continue 语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
                     continue
 
-                logger.info("获取提交所需参数成功，返回信息：" + res)
-
+                # logger.info("获取提交所需参数成功，返回信息：" + res)
+                logger.info('获取提交所需参数成功')
                 # 将返回的json 数据 res 转换成表
                 s = json.loads(res)
                 # 提取提交所需要的adid和randnum
@@ -73,11 +73,11 @@ class brushAds(object):
                 # print('提交网址：', self.submitURL)
                 # print('提交数据：', self.submitData)
                 if makeRes:
-                    logger.info('等待 %d 秒后提交数据', interval)
+                    logger.info('休眠 %d 秒后提交数据', interval)
                     time.sleep(interval)
                     submitRes = self.webpage_visit(self.submitURL, self.submitData)
                 else:
-                    logger.info('等待 %d 秒后尝试重试', retryInterval)
+                    logger.info('休眠 %d 秒后尝试重试', retryInterval)
                     time.sleep(retryInterval)
                     continue
 
@@ -87,15 +87,15 @@ class brushAds(object):
                         logger.error('当日任务已达上限')
                         break
                     else:
-                        logger.error('当前提交数据返回【】，等待 %d 秒后重试，已重试次数：%d', retryInterval, i)
+                        logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
 
                 elif submitRes != '':
                     self.income = self.income + 0.11
                     submitRes = json.loads(submitRes)
                     msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
                     msg = msg.replace('\\n', '').replace('\\', ' ')  # 多次字符串替换
-                    logger.info('此次完成，返回：' + msg)
-                    logger.info('休息 %d 秒 继续任务', retryInterval)
+                    logger.info('第：%d 条数据 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', m, n, msg, self.income)
+                    logger.info('休眠 %d 秒后继续任务', retryInterval)
 
                 time.sleep(retryInterval)
         # 跑完后把累计收益推送到微信
@@ -124,8 +124,8 @@ class brushAds(object):
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b80be4affe90aa5fd5afc199690f68a8
         self.submitURL = url.replace('doujin_addtemp', 'doujin_kanwanad')
         # print('submitURL', self.submitURL)
-        logger.info('提交网址构造成功：' + self.submitURL)
-
+        # logger.info('提交网址构造成功：' + self.submitURL)
+        logger.info('提交网址构造成功')
         # 构造提交数据
         # m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&fid=318&appname=Weixin&now_title=%E6%BD%9C%E6%84%8F%E8%AF%86%E9%87%8C%E4%BD%A0%E6%98%AF%E5%93%AA%E7%A7%8D%E7%A5%9E%E8%AF%9D%E5%8A%A8%E7%89%A9%EF%BC%9F
         # m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=随机ID&randnum=随机数
@@ -151,7 +151,8 @@ class brushAds(object):
         # 提交数据创造完成
         self.submitData = dataTmp + 'adid=' + str(self.adid) + '&randnum=' + str(self.randnum)
         # print('submitData', self.submitData)
-        logger.info('提交数据构造成功：' + self.submitData)
+        # logger.info('提交数据构造成功：' + self.submitData)
+        logger.info('提交数据构造成功')
         return True
 
     def get_data_file(self):
