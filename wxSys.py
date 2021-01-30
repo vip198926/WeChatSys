@@ -98,7 +98,8 @@ class brushAds(object):
                     logger.info('休息 %d 秒 继续任务', retryInterval)
 
                 time.sleep(retryInterval)
-        self.send_wechat('今日任务完成，共 ' + str(m) + ' 条数据，累计收益: ' + str(self.income))
+        # 跑完后把累计收益推送到微信
+        self.send_wechat('今日任务完成，共 ' + str(m) + ' 条数据，累计收益: ' + str(format(self.income, '.3f')))
 
     def ConsReqParameters(self, url, data):
         """
