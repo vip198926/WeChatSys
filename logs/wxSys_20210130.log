@@ -1,0 +1,885 @@
+2021-01-30 15:01:24,287 INFO: 任务开始..
+2021-01-30 15:01:24,287 INFO: 读取账号数据..
+2021-01-30 15:01:24,288 INFO: 当前执行第：1 条数据 第：1 次请求
+2021-01-30 15:01:24,924 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174804","randnum":48325,"fanqian_arr":1}
+2021-01-30 15:01:24,924 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:01:24,924 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=4fc4ba463a2061bd5d42376ed3e09184
+2021-01-30 15:01:24,924 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174804&randnum=48325
+2021-01-30 15:01:24,925 INFO: 等待 30 秒后提交数据
+2021-01-30 15:01:55,554 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 15:02:05,569 INFO: 当前执行第：1 条数据 第：2 次请求
+2021-01-30 15:02:06,069 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174810","randnum":86474,"fanqian_arr":1}
+2021-01-30 15:02:06,069 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:02:06,069 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=c57fabdec12339e2fd6a2be71e0041d8
+2021-01-30 15:02:06,069 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174810&randnum=86474
+2021-01-30 15:02:06,069 INFO: 等待 30 秒后提交数据
+2021-01-30 15:02:36,617 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 15:02:46,629 INFO: 当前执行第：1 条数据 第：3 次请求
+2021-01-30 15:02:47,369 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174811","randnum":70255,"fanqian_arr":1}
+2021-01-30 15:02:47,369 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:02:47,370 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=572a318354b33743397abd845a8c659e
+2021-01-30 15:02:47,370 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174811&randnum=70255
+2021-01-30 15:02:47,370 INFO: 等待 30 秒后提交数据
+2021-01-30 15:03:17,979 ERROR: 当日任务已达上限
+2021-01-30 15:03:17,979 INFO: 当前执行第：2 条数据 第：1 次请求
+2021-01-30 15:03:18,516 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174812","randnum":19062,"fanqian_arr":1}
+2021-01-30 15:03:18,516 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:03:18,516 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=3d94e0fd585ae4a808922ca030aeffff
+2021-01-30 15:03:18,517 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=174812&randnum=19062
+2021-01-30 15:03:18,517 INFO: 等待 30 秒后提交数据
+2021-01-30 15:03:49,077 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 15:03:59,091 INFO: 当前执行第：2 条数据 第：2 次请求
+2021-01-30 15:03:59,595 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174813","randnum":50345,"fanqian_arr":1}
+2021-01-30 15:03:59,596 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:03:59,596 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=f751eb223db91d2d5b635b450698556a
+2021-01-30 15:03:59,596 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=174813&randnum=50345
+2021-01-30 15:03:59,596 INFO: 等待 30 秒后提交数据
+2021-01-30 15:06:00,925 INFO: 任务开始..
+2021-01-30 15:06:00,925 INFO: 读取账号数据..
+2021-01-30 15:06:00,925 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 15:06:01,794 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174814","randnum":47681,"fanqian_arr":1}
+2021-01-30 15:06:01,794 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:06:01,794 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6a6a16ebef0509fa786c96099fd09966
+2021-01-30 15:06:01,794 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174814&randnum=47681
+2021-01-30 15:06:01,794 INFO: 等待 30 秒后提交数据
+2021-01-30 15:06:32,349 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 15:06:42,354 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 15:06:42,912 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174815","randnum":74967,"fanqian_arr":1}
+2021-01-30 15:06:42,912 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:06:42,912 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=31294fb0b4d7071b0b3c778fd293fe96
+2021-01-30 15:06:42,912 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174815&randnum=74967
+2021-01-30 15:06:42,912 INFO: 等待 30 秒后提交数据
+2021-01-30 15:07:13,487 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 15:07:23,497 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 15:07:23,992 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174817","randnum":36973,"fanqian_arr":1}
+2021-01-30 15:07:23,992 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:07:23,993 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b9fac304f6392faada6128bb3bb22eef
+2021-01-30 15:07:23,993 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=174817&randnum=36973
+2021-01-30 15:07:23,993 INFO: 等待 30 秒后提交数据
+2021-01-30 15:07:54,584 ERROR: 当日任务已达上限
+2021-01-30 15:07:54,584 INFO: 当前执行第：2 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 15:07:55,023 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174818","randnum":69856,"fanqian_arr":1}
+2021-01-30 15:07:55,023 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:07:55,023 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=f015cccf9828c5acd99131520a3a1de8
+2021-01-30 15:07:55,024 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=174818&randnum=69856
+2021-01-30 15:07:55,024 INFO: 等待 30 秒后提交数据
+2021-01-30 15:08:25,604 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 15:08:35,615 INFO: 当前执行第：2 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 15:08:36,372 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174819","randnum":20789,"fanqian_arr":1}
+2021-01-30 15:08:36,372 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:08:36,372 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=95f432fbe7780f316bfaa3686552e92f
+2021-01-30 15:08:36,373 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=174819&randnum=20789
+2021-01-30 15:08:36,373 INFO: 等待 30 秒后提交数据
+2021-01-30 15:09:07,093 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 15:09:17,102 INFO: 当前执行第：2 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 15:09:17,666 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"174820","randnum":88889,"fanqian_arr":1}
+2021-01-30 15:09:17,667 INFO: 构造提交所用的网址和数据..
+2021-01-30 15:09:17,667 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=096fb7f424e284b2e093dd988999b832
+2021-01-30 15:09:17,667 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=174820&randnum=88889
+2021-01-30 15:09:17,667 INFO: 等待 30 秒后提交数据
+2021-01-30 17:13:39,501 INFO: 任务开始..
+2021-01-30 17:13:39,501 INFO: 读取账号数据..
+2021-01-30 17:13:39,502 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 17:13:40,115 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175056","randnum":27322,"fanqian_arr":1}
+2021-01-30 17:13:40,115 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:13:40,115 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=cd6c6a1e63c03ac536440a8d051cc1a4
+2021-01-30 17:13:40,115 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175056&randnum=27322
+2021-01-30 17:13:40,115 INFO: 等待 30 秒后提交数据
+2021-01-30 17:16:01,688 INFO: 任务开始..
+2021-01-30 17:16:01,688 INFO: 读取账号数据..
+2021-01-30 17:16:01,688 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 17:16:02,538 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175070","randnum":29101,"fanqian_arr":1}
+2021-01-30 17:16:02,538 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:16:02,539 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=882687e926c19f1dc45435dd58d20c1c
+2021-01-30 17:16:02,539 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175070&randnum=29101
+2021-01-30 17:16:02,539 INFO: 等待 30 秒后提交数据
+2021-01-30 17:16:33,099 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 17:16:43,107 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 17:16:43,605 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175076","randnum":95102,"fanqian_arr":1}
+2021-01-30 17:16:43,606 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:16:43,606 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=e875f94185ba54a8068ccd7ab3bfb6b1
+2021-01-30 17:16:43,606 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175076&randnum=95102
+2021-01-30 17:16:43,606 INFO: 等待 30 秒后提交数据
+2021-01-30 17:17:14,169 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 17:17:24,172 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 17:17:24,665 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175079","randnum":48483,"fanqian_arr":1}
+2021-01-30 17:17:24,665 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:17:24,666 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=95bf12aea26e6bc6f96361868daceebc
+2021-01-30 17:17:24,666 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175079&randnum=48483
+2021-01-30 17:17:24,666 INFO: 等待 30 秒后提交数据
+2021-01-30 17:17:55,286 ERROR: 当日任务已达上限
+2021-01-30 17:19:57,858 INFO: 信息已推送至微信
+2021-01-30 17:22:17,324 INFO: 任务开始..
+2021-01-30 17:22:17,324 INFO: 读取账号数据..
+2021-01-30 17:22:17,325 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 17:22:17,899 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175123","randnum":61544,"fanqian_arr":1}
+2021-01-30 17:22:17,899 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:22:17,899 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=da7021164cfbb5145fdb80adf15863cd
+2021-01-30 17:22:17,899 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175123&randnum=61544
+2021-01-30 17:22:17,899 INFO: 等待 30 秒后提交数据
+2021-01-30 17:22:48,513 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 17:22:58,518 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 17:22:59,036 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175126","randnum":48208,"fanqian_arr":1}
+2021-01-30 17:22:59,036 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:22:59,036 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=01ce1dd07a23b22d4aa9b55d328a2efb
+2021-01-30 17:22:59,036 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175126&randnum=48208
+2021-01-30 17:22:59,036 INFO: 等待 30 秒后提交数据
+2021-01-30 17:23:29,598 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 17:23:39,602 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 17:23:40,147 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175130","randnum":17450,"fanqian_arr":1}
+2021-01-30 17:23:40,147 INFO: 构造提交所用的网址和数据..
+2021-01-30 17:23:40,148 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=725afb06c87e09c2ffe87a54d57224b8
+2021-01-30 17:23:40,148 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5LFofwsoh_9V11_egQaBSw0&gucid=0&adid=175130&randnum=17450
+2021-01-30 17:23:40,148 INFO: 等待 30 秒后提交数据
+2021-01-30 17:24:10,750 ERROR: 当日任务已达上限
+2021-01-30 17:24:11,030 INFO: 信息已推送至微信
+2021-01-30 18:41:57,641 INFO: 任务开始..
+2021-01-30 18:41:57,641 INFO: 读取账号数据..
+2021-01-30 18:42:22,320 INFO: 任务开始..
+2021-01-30 18:42:22,321 INFO: 读取账号数据..
+2021-01-30 18:43:20,608 INFO: 任务开始..
+2021-01-30 18:43:20,608 INFO: 读取账号数据..
+2021-01-30 18:48:35,830 INFO: 任务开始..
+2021-01-30 18:48:35,830 INFO: 读取账号数据..
+2021-01-30 18:50:57,069 INFO: 任务开始..
+2021-01-30 18:50:57,069 INFO: 读取账号数据..
+2021-01-30 18:51:29,004 INFO: 任务开始..
+2021-01-30 18:51:29,004 INFO: 读取账号数据..
+2021-01-30 18:51:29,004 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 18:51:29,650 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175334","randnum":28780,"fanqian_arr":1}
+2021-01-30 18:51:29,650 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:51:29,650 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=69b05428c3a16355bff4e9a979844d49
+2021-01-30 18:51:29,650 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175334&randnum=28780
+2021-01-30 18:51:29,651 INFO: 等待 30 秒后提交数据
+2021-01-30 18:52:00,517 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:52:00,518 INFO: 休息 10 秒 继续任务
+2021-01-30 18:52:10,531 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 18:52:11,038 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175335","randnum":19218,"fanqian_arr":1}
+2021-01-30 18:52:11,038 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:52:11,039 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=75b07f6a9e8bebd0ede7a1275c19d669
+2021-01-30 18:52:11,039 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175335&randnum=19218
+2021-01-30 18:52:11,039 INFO: 等待 30 秒后提交数据
+2021-01-30 18:52:41,871 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:52:41,871 INFO: 休息 10 秒 继续任务
+2021-01-30 18:52:51,882 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 18:52:52,390 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175336","randnum":91781,"fanqian_arr":1}
+2021-01-30 18:52:52,391 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:52:52,391 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=26fadeb14b60041e433dc24ae8489e35
+2021-01-30 18:52:52,391 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175336&randnum=91781
+2021-01-30 18:52:52,391 INFO: 等待 30 秒后提交数据
+2021-01-30 18:53:23,310 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:53:23,310 INFO: 休息 10 秒 继续任务
+2021-01-30 18:53:33,324 INFO: 当前执行第：1 条数据 第：4 次请求, 今日累计收益：0
+2021-01-30 18:53:33,799 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175337","randnum":46425,"fanqian_arr":1}
+2021-01-30 18:53:33,799 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:53:33,800 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6cd594b7e4d98cd3d651b4002e866ba9
+2021-01-30 18:53:33,800 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175337&randnum=46425
+2021-01-30 18:53:33,800 INFO: 等待 30 秒后提交数据
+2021-01-30 18:54:04,738 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:54:04,738 INFO: 休息 10 秒 继续任务
+2021-01-30 18:54:14,746 INFO: 当前执行第：1 条数据 第：5 次请求, 今日累计收益：0
+2021-01-30 18:54:15,234 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175338","randnum":72887,"fanqian_arr":1}
+2021-01-30 18:54:15,235 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:54:15,235 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=16d15552ac58a159d0a5f99b3aa636f3
+2021-01-30 18:54:15,235 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175338&randnum=72887
+2021-01-30 18:54:15,235 INFO: 等待 30 秒后提交数据
+2021-01-30 18:54:46,057 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:54:46,058 INFO: 休息 10 秒 继续任务
+2021-01-30 18:54:56,071 INFO: 当前执行第：1 条数据 第：6 次请求, 今日累计收益：0
+2021-01-30 18:54:56,525 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175339","randnum":63090,"fanqian_arr":1}
+2021-01-30 18:54:56,525 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:54:56,525 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6746504089000f440d26a6d12e62333e
+2021-01-30 18:54:56,525 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175339&randnum=63090
+2021-01-30 18:54:56,525 INFO: 等待 30 秒后提交数据
+2021-01-30 18:55:27,387 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:55:27,387 INFO: 休息 10 秒 继续任务
+2021-01-30 18:55:37,394 INFO: 当前执行第：1 条数据 第：7 次请求, 今日累计收益：0
+2021-01-30 18:55:37,904 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175340","randnum":63252,"fanqian_arr":1}
+2021-01-30 18:55:37,904 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:55:37,905 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=d41aa117fe1d1960bd2527ab65958b92
+2021-01-30 18:55:37,905 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175340&randnum=63252
+2021-01-30 18:55:37,905 INFO: 等待 30 秒后提交数据
+2021-01-30 18:56:08,714 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:56:08,715 INFO: 休息 10 秒 继续任务
+2021-01-30 18:56:18,730 INFO: 当前执行第：1 条数据 第：8 次请求, 今日累计收益：0
+2021-01-30 18:56:19,242 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175342","randnum":62437,"fanqian_arr":1}
+2021-01-30 18:56:19,242 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:56:19,242 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=9ce5f4c02a2d8290e32210679f92bd2b
+2021-01-30 18:56:19,242 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175342&randnum=62437
+2021-01-30 18:56:19,242 INFO: 等待 30 秒后提交数据
+2021-01-30 18:56:50,086 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:56:50,086 INFO: 休息 10 秒 继续任务
+2021-01-30 18:57:00,099 INFO: 当前执行第：1 条数据 第：9 次请求, 今日累计收益：0
+2021-01-30 18:57:00,587 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175344","randnum":20992,"fanqian_arr":1}
+2021-01-30 18:57:00,587 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:57:00,587 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=90b8e0cd60c753f673efd0c04d0ca778
+2021-01-30 18:57:00,587 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175344&randnum=20992
+2021-01-30 18:57:00,587 INFO: 等待 30 秒后提交数据
+2021-01-30 18:57:31,400 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:57:31,401 INFO: 休息 10 秒 继续任务
+2021-01-30 18:57:41,412 INFO: 当前执行第：1 条数据 第：10 次请求, 今日累计收益：0
+2021-01-30 18:57:41,945 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175346","randnum":70269,"fanqian_arr":1}
+2021-01-30 18:57:41,945 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:57:41,946 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=96d9e74f94f1b8c66661090b9151449c
+2021-01-30 18:57:41,946 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175346&randnum=70269
+2021-01-30 18:57:41,946 INFO: 等待 30 秒后提交数据
+2021-01-30 18:58:12,773 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 18:58:12,773 INFO: 休息 10 秒 继续任务
+2021-01-30 18:58:22,783 INFO: 当前执行第：1 条数据 第：11 次请求, 今日累计收益：1
+2021-01-30 18:58:23,300 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175348","randnum":47031,"fanqian_arr":1}
+2021-01-30 18:58:23,300 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:58:23,300 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=ef8e2b15bdcbfda4d7411bd0d478eb7e
+2021-01-30 18:58:23,300 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175348&randnum=47031
+2021-01-30 18:58:23,300 INFO: 等待 30 秒后提交数据
+2021-01-30 18:58:54,438 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:58:54,438 INFO: 休息 10 秒 继续任务
+2021-01-30 18:59:04,441 INFO: 当前执行第：1 条数据 第：12 次请求, 今日累计收益：1
+2021-01-30 18:59:05,036 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175349","randnum":30439,"fanqian_arr":1}
+2021-01-30 18:59:05,036 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:59:05,036 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=61b942f851391e3b2c530c0c923529c2
+2021-01-30 18:59:05,036 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175349&randnum=30439
+2021-01-30 18:59:05,037 INFO: 等待 30 秒后提交数据
+2021-01-30 18:59:35,891 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 18:59:35,891 INFO: 休息 10 秒 继续任务
+2021-01-30 18:59:45,905 INFO: 当前执行第：1 条数据 第：13 次请求, 今日累计收益：1
+2021-01-30 18:59:46,410 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175354","randnum":55989,"fanqian_arr":1}
+2021-01-30 18:59:46,410 INFO: 构造提交所用的网址和数据..
+2021-01-30 18:59:46,410 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=1a374c4e4ef6cbfd461447056cdc108b
+2021-01-30 18:59:46,411 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175354&randnum=55989
+2021-01-30 18:59:46,411 INFO: 等待 30 秒后提交数据
+2021-01-30 19:00:17,300 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:00:17,300 INFO: 休息 10 秒 继续任务
+2021-01-30 19:00:27,313 INFO: 当前执行第：1 条数据 第：14 次请求, 今日累计收益：1
+2021-01-30 19:00:27,835 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175356","randnum":46935,"fanqian_arr":1}
+2021-01-30 19:00:27,835 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:00:27,835 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=92afc021192e9623c4a250603329fae2
+2021-01-30 19:00:27,835 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175356&randnum=46935
+2021-01-30 19:00:27,835 INFO: 等待 30 秒后提交数据
+2021-01-30 19:02:15,543 INFO: 此次完成，返回：'看完'
+2021-01-30 19:02:15,543 INFO: 休息 10 秒 继续任务
+2021-01-30 19:02:25,549 INFO: 当前执行第：1 条数据 第：15 次请求, 今日累计收益：1
+2021-01-30 19:02:26,056 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175359","randnum":88038,"fanqian_arr":1}
+2021-01-30 19:02:26,056 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:02:26,056 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=0df7529f091091adda661192804d1b34
+2021-01-30 19:02:26,056 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175359&randnum=88038
+2021-01-30 19:02:26,057 INFO: 等待 30 秒后提交数据
+2021-01-30 19:02:56,627 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 19:03:06,635 INFO: 当前执行第：1 条数据 第：16 次请求, 今日累计收益：1
+2021-01-30 19:03:07,094 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175361","randnum":21466,"fanqian_arr":1}
+2021-01-30 19:03:07,094 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:03:07,094 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=389460ef2f75df590bf6ca203d51ad84
+2021-01-30 19:03:07,094 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175361&randnum=21466
+2021-01-30 19:03:07,094 INFO: 等待 30 秒后提交数据
+2021-01-30 19:03:37,653 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 19:03:47,663 INFO: 当前执行第：1 条数据 第：17 次请求, 今日累计收益：1
+2021-01-30 19:03:48,215 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175365","randnum":24284,"fanqian_arr":1}
+2021-01-30 19:03:48,215 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:03:48,215 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=2608ef3c3fad4ed36f9d680d2cc36188
+2021-01-30 19:03:48,215 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5RiwYmqKCTY2HvH7L2rxJ4M&gucid=&id=385&f_from=513&adid=175365&randnum=24284
+2021-01-30 19:03:48,215 INFO: 等待 30 秒后提交数据
+2021-01-30 19:04:18,776 ERROR: 当日任务已达上限
+2021-01-30 19:04:18,776 INFO: 当前执行第：2 条数据 第：1 次请求, 今日累计收益：1
+2021-01-30 19:04:19,294 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175366","randnum":34060,"fanqian_arr":1}
+2021-01-30 19:04:19,294 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:04:19,294 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=3d1c6d69d124f2a76eca770a4b784969
+2021-01-30 19:04:19,294 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175366&randnum=34060
+2021-01-30 19:04:19,295 INFO: 等待 30 秒后提交数据
+2021-01-30 19:04:50,134 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:04:50,134 INFO: 休息 10 秒 继续任务
+2021-01-30 19:05:00,140 INFO: 当前执行第：2 条数据 第：2 次请求, 今日累计收益：1
+2021-01-30 19:05:01,157 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175367","randnum":94512,"fanqian_arr":1}
+2021-01-30 19:05:01,157 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:05:01,157 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=4d061c8b2b9d7bd3cc3ee91a3623d3f7
+2021-01-30 19:05:01,157 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175367&randnum=94512
+2021-01-30 19:05:01,157 INFO: 等待 30 秒后提交数据
+2021-01-30 19:05:32,175 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:05:32,175 INFO: 休息 10 秒 继续任务
+2021-01-30 19:05:42,181 INFO: 当前执行第：2 条数据 第：3 次请求, 今日累计收益：1
+2021-01-30 19:05:42,697 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175368","randnum":38199,"fanqian_arr":1}
+2021-01-30 19:05:42,697 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:05:42,697 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=2da00a4157863189304c5436483014d7
+2021-01-30 19:05:42,698 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175368&randnum=38199
+2021-01-30 19:05:42,698 INFO: 等待 30 秒后提交数据
+2021-01-30 19:06:13,473 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 19:06:13,474 INFO: 休息 10 秒 继续任务
+2021-01-30 19:06:23,489 INFO: 当前执行第：2 条数据 第：4 次请求, 今日累计收益：1
+2021-01-30 19:06:23,990 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175369","randnum":13198,"fanqian_arr":1}
+2021-01-30 19:06:23,990 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:06:23,990 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=285193256c5c535ce3ce1e0cfc7c946d
+2021-01-30 19:06:23,990 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175369&randnum=13198
+2021-01-30 19:06:23,990 INFO: 等待 30 秒后提交数据
+2021-01-30 19:06:54,775 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:06:54,775 INFO: 休息 10 秒 继续任务
+2021-01-30 19:07:04,782 INFO: 当前执行第：2 条数据 第：5 次请求, 今日累计收益：1
+2021-01-30 19:07:05,296 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175371","randnum":33473,"fanqian_arr":1}
+2021-01-30 19:07:05,296 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:07:05,296 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=a1b406afe8ff98d560fa9201f9138739
+2021-01-30 19:07:05,296 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175371&randnum=33473
+2021-01-30 19:07:05,297 INFO: 等待 30 秒后提交数据
+2021-01-30 19:07:36,159 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:07:36,159 INFO: 休息 10 秒 继续任务
+2021-01-30 19:07:46,174 INFO: 当前执行第：2 条数据 第：6 次请求, 今日累计收益：2
+2021-01-30 19:07:46,657 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175372","randnum":70044,"fanqian_arr":1}
+2021-01-30 19:07:46,657 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:07:46,657 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7decb7cf86130d6cb187edf224a6687b
+2021-01-30 19:07:46,657 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175372&randnum=70044
+2021-01-30 19:07:46,657 INFO: 等待 30 秒后提交数据
+2021-01-30 19:08:17,465 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 19:08:17,466 INFO: 休息 10 秒 继续任务
+2021-01-30 19:08:27,469 INFO: 当前执行第：2 条数据 第：7 次请求, 今日累计收益：2
+2021-01-30 19:08:27,937 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175373","randnum":50661,"fanqian_arr":1}
+2021-01-30 19:08:27,937 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:08:27,937 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b697569135b8acc5081a6511cb118d68
+2021-01-30 19:08:27,937 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175373&randnum=50661
+2021-01-30 19:08:27,937 INFO: 等待 30 秒后提交数据
+2021-01-30 19:08:58,741 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:08:58,741 INFO: 休息 10 秒 继续任务
+2021-01-30 19:09:08,754 INFO: 当前执行第：2 条数据 第：8 次请求, 今日累计收益：2
+2021-01-30 19:09:09,241 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175375","randnum":95457,"fanqian_arr":1}
+2021-01-30 19:09:09,241 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:09:09,241 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=74cc314d1b0c3fb4c0dee452cb49fc77
+2021-01-30 19:09:09,241 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175375&randnum=95457
+2021-01-30 19:09:09,241 INFO: 等待 30 秒后提交数据
+2021-01-30 19:09:39,922 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:09:39,922 INFO: 休息 10 秒 继续任务
+2021-01-30 19:09:49,931 INFO: 当前执行第：2 条数据 第：9 次请求, 今日累计收益：2
+2021-01-30 19:09:50,425 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175376","randnum":23487,"fanqian_arr":1}
+2021-01-30 19:09:50,425 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:09:50,425 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7255e5f3e8526f709ab57f37cd2d1be6
+2021-01-30 19:09:50,425 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175376&randnum=23487
+2021-01-30 19:09:50,425 INFO: 等待 30 秒后提交数据
+2021-01-30 19:10:21,234 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:10:21,234 INFO: 休息 10 秒 继续任务
+2021-01-30 19:10:31,239 INFO: 当前执行第：2 条数据 第：10 次请求, 今日累计收益：2
+2021-01-30 19:10:31,725 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175377","randnum":81009,"fanqian_arr":1}
+2021-01-30 19:10:31,725 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:10:31,725 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b93cf12a0c6037a2f0c8a276182bc26e
+2021-01-30 19:10:31,725 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175377&randnum=81009
+2021-01-30 19:10:31,725 INFO: 等待 30 秒后提交数据
+2021-01-30 19:11:02,505 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 19:11:02,505 INFO: 休息 10 秒 继续任务
+2021-01-30 19:11:12,519 INFO: 当前执行第：2 条数据 第：11 次请求, 今日累计收益：2
+2021-01-30 19:11:13,065 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175378","randnum":33438,"fanqian_arr":1}
+2021-01-30 19:11:13,065 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:11:13,065 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7b2f190bad79becb71ea0f07f278ec1e
+2021-01-30 19:11:13,065 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175378&randnum=33438
+2021-01-30 19:11:13,065 INFO: 等待 30 秒后提交数据
+2021-01-30 19:11:43,874 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:11:43,875 INFO: 休息 10 秒 继续任务
+2021-01-30 19:11:53,887 INFO: 当前执行第：2 条数据 第：12 次请求, 今日累计收益：2
+2021-01-30 19:11:54,434 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175380","randnum":12189,"fanqian_arr":1}
+2021-01-30 19:11:54,435 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:11:54,435 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=60e341cdd7e9c785546797a56fdbba15
+2021-01-30 19:11:54,435 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175380&randnum=12189
+2021-01-30 19:11:54,435 INFO: 等待 30 秒后提交数据
+2021-01-30 19:12:25,235 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 19:12:25,235 INFO: 休息 10 秒 继续任务
+2021-01-30 19:12:35,244 INFO: 当前执行第：2 条数据 第：13 次请求, 今日累计收益：2
+2021-01-30 19:12:35,748 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175383","randnum":69007,"fanqian_arr":1}
+2021-01-30 19:12:35,748 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:12:35,748 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=bc1d9f7505525f3bda43d39038e0a26c
+2021-01-30 19:12:35,748 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175383&randnum=69007
+2021-01-30 19:12:35,748 INFO: 等待 30 秒后提交数据
+2021-01-30 19:13:06,542 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 19:13:06,542 INFO: 休息 10 秒 继续任务
+2021-01-30 19:13:16,544 INFO: 当前执行第：2 条数据 第：14 次请求, 今日累计收益：2
+2021-01-30 19:13:17,142 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175386","randnum":31923,"fanqian_arr":1}
+2021-01-30 19:13:17,143 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:13:17,143 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=cc31dee0779ac2e5317ea3e74d8fa162
+2021-01-30 19:13:17,143 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175386&randnum=31923
+2021-01-30 19:13:17,143 INFO: 等待 30 秒后提交数据
+2021-01-30 19:13:47,689 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 19:13:57,694 INFO: 当前执行第：2 条数据 第：15 次请求, 今日累计收益：2
+2021-01-30 19:13:58,245 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175402","randnum":20220,"fanqian_arr":1}
+2021-01-30 19:13:58,245 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:13:58,245 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b19e8a4b70943b7afdb30daf00a4fdd7
+2021-01-30 19:13:58,245 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175402&randnum=20220
+2021-01-30 19:13:58,245 INFO: 等待 30 秒后提交数据
+2021-01-30 19:14:28,864 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 19:14:38,872 INFO: 当前执行第：2 条数据 第：16 次请求, 今日累计收益：2
+2021-01-30 19:14:39,506 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175403","randnum":45743,"fanqian_arr":1}
+2021-01-30 19:14:39,506 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:14:39,507 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=1d5e33e643e056e49320a0f42732c79e
+2021-01-30 19:14:39,507 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Dq25Cq1fFUC_O6V2Kv76x0&gucid=0&adid=175403&randnum=45743
+2021-01-30 19:14:39,507 INFO: 等待 30 秒后提交数据
+2021-01-30 19:15:10,107 ERROR: 当日任务已达上限
+2021-01-30 19:15:10,108 INFO: 当前执行第：3 条数据 第：1 次请求, 今日累计收益：2
+2021-01-30 19:15:10,607 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175407","randnum":15263,"fanqian_arr":1}
+2021-01-30 19:15:10,607 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:15:10,608 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=3d4a426b2eacb7c5997d024d19339902
+2021-01-30 19:15:10,608 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5f9yapwAfMFNVhhs5tDUJ4s&gucid=&id=385&f_from=513&adid=175407&randnum=15263
+2021-01-30 19:15:10,608 INFO: 等待 30 秒后提交数据
+2021-01-30 19:15:41,170 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 19:15:51,175 INFO: 当前执行第：3 条数据 第：2 次请求, 今日累计收益：2
+2021-01-30 19:15:51,682 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175410","randnum":99042,"fanqian_arr":1}
+2021-01-30 19:15:51,682 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:15:51,682 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=8fdf18232a8a33cb6995781558a98801
+2021-01-30 19:15:51,682 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5f9yapwAfMFNVhhs5tDUJ4s&gucid=&id=385&f_from=513&adid=175410&randnum=99042
+2021-01-30 19:15:51,682 INFO: 等待 30 秒后提交数据
+2021-01-30 19:16:22,278 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 19:16:32,281 INFO: 当前执行第：3 条数据 第：3 次请求, 今日累计收益：2
+2021-01-30 19:16:32,811 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175411","randnum":82133,"fanqian_arr":1}
+2021-01-30 19:16:32,811 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:16:32,811 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7988f6f506c124107e0c91bfd06e1845
+2021-01-30 19:16:32,811 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5f9yapwAfMFNVhhs5tDUJ4s&gucid=&id=385&f_from=513&adid=175411&randnum=82133
+2021-01-30 19:16:32,812 INFO: 等待 30 秒后提交数据
+2021-01-30 19:17:03,396 ERROR: 当日任务已达上限
+2021-01-30 19:17:03,396 INFO: 当前执行第：4 条数据 第：1 次请求, 今日累计收益：2
+2021-01-30 19:17:03,942 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175413","randnum":63819,"fanqian_arr":1}
+2021-01-30 19:17:03,942 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:17:03,942 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=054559d446e457839762bfdacdb5717e
+2021-01-30 19:17:03,942 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BgVDO8BV7XZMr5UHt0Yjn0&gucid=0&adid=175413&randnum=63819
+2021-01-30 19:17:03,942 INFO: 等待 30 秒后提交数据
+2021-01-30 19:17:34,476 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 19:17:44,486 INFO: 当前执行第：4 条数据 第：2 次请求, 今日累计收益：2
+2021-01-30 19:17:44,957 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175415","randnum":83710,"fanqian_arr":1}
+2021-01-30 19:17:44,957 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:17:44,957 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b7fcb43d8a4bc90600e567136563e8e1
+2021-01-30 19:17:44,957 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BgVDO8BV7XZMr5UHt0Yjn0&gucid=0&adid=175415&randnum=83710
+2021-01-30 19:17:44,957 INFO: 等待 30 秒后提交数据
+2021-01-30 19:18:15,476 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 19:18:25,490 INFO: 当前执行第：4 条数据 第：3 次请求, 今日累计收益：2
+2021-01-30 19:18:25,981 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175416","randnum":40121,"fanqian_arr":1}
+2021-01-30 19:18:25,981 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:18:25,981 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=5df109d37af695018b9a367f411b1b1d
+2021-01-30 19:18:25,981 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5BgVDO8BV7XZMr5UHt0Yjn0&gucid=0&adid=175416&randnum=40121
+2021-01-30 19:18:25,981 INFO: 等待 30 秒后提交数据
+2021-01-30 19:18:56,503 ERROR: 当日任务已达上限
+2021-01-30 19:18:56,503 INFO: 当前执行第：5 条数据 第：1 次请求, 今日累计收益：2
+2021-01-30 19:18:57,101 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175417","randnum":41896,"fanqian_arr":1}
+2021-01-30 19:18:57,101 INFO: 构造提交所用的网址和数据..
+2021-01-30 19:18:57,101 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=4f81d937e8d68f7a7535a2f5ed24d898
+2021-01-30 19:18:57,101 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fa5oW1IdpH8VxKuD7Mr2Tk&gucid=&id=385&f_from=513&adid=175417&randnum=41896
+2021-01-30 19:18:57,101 INFO: 等待 30 秒后提交数据
+2021-01-30 20:04:00,674 INFO: 任务开始..
+2021-01-30 20:04:00,674 INFO: 读取账号数据..
+2021-01-30 20:04:00,674 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 20:04:01,221 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175616","randnum":71315,"fanqian_arr":1}
+2021-01-30 20:04:01,222 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:04:01,222 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=93dd95572b174267cb0b4c5bfdb81cb2
+2021-01-30 20:04:01,222 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175616&randnum=71315
+2021-01-30 20:04:01,222 INFO: 等待 30 秒后提交数据
+2021-01-30 20:04:32,086 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:04:32,086 INFO: 休息 10 秒 继续任务
+2021-01-30 20:04:42,100 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 20:04:42,628 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175618","randnum":25911,"fanqian_arr":1}
+2021-01-30 20:04:42,629 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:04:42,629 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b69704d819e6d4dfec4d407278ef28fb
+2021-01-30 20:04:42,629 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175618&randnum=25911
+2021-01-30 20:04:42,629 INFO: 等待 30 秒后提交数据
+2021-01-30 20:05:13,476 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:05:13,476 INFO: 休息 10 秒 继续任务
+2021-01-30 20:05:23,478 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0
+2021-01-30 20:05:23,953 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175619","randnum":17934,"fanqian_arr":1}
+2021-01-30 20:05:23,953 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:05:23,954 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b82148161115437a817bee022b20f8f0
+2021-01-30 20:05:23,954 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175619&randnum=17934
+2021-01-30 20:05:23,954 INFO: 等待 30 秒后提交数据
+2021-01-30 20:05:54,944 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:05:54,944 INFO: 休息 10 秒 继续任务
+2021-01-30 20:06:04,946 INFO: 当前执行第：1 条数据 第：4 次请求, 今日累计收益：0
+2021-01-30 20:06:05,470 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175622","randnum":38221,"fanqian_arr":1}
+2021-01-30 20:06:05,470 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:06:05,470 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=07825a345092b4b1ab36ca62a657f893
+2021-01-30 20:06:05,471 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175622&randnum=38221
+2021-01-30 20:06:05,471 INFO: 等待 30 秒后提交数据
+2021-01-30 20:06:36,229 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:06:36,229 INFO: 休息 10 秒 继续任务
+2021-01-30 20:06:46,231 INFO: 当前执行第：1 条数据 第：5 次请求, 今日累计收益：0
+2021-01-30 20:06:46,770 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175624","randnum":59671,"fanqian_arr":1}
+2021-01-30 20:06:46,770 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:06:46,770 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=e08034d7caeb4ce33729f93b547192e7
+2021-01-30 20:06:46,770 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175624&randnum=59671
+2021-01-30 20:06:46,770 INFO: 等待 30 秒后提交数据
+2021-01-30 20:07:17,605 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:07:17,606 INFO: 休息 10 秒 继续任务
+2021-01-30 20:07:27,609 INFO: 当前执行第：1 条数据 第：6 次请求, 今日累计收益：0
+2021-01-30 20:07:28,103 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175628","randnum":46763,"fanqian_arr":1}
+2021-01-30 20:07:28,103 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:07:28,103 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=110beb3694b12c2d5917a2e394251409
+2021-01-30 20:07:28,103 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175628&randnum=46763
+2021-01-30 20:07:28,103 INFO: 等待 30 秒后提交数据
+2021-01-30 20:07:58,912 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:07:58,912 INFO: 休息 10 秒 继续任务
+2021-01-30 20:08:08,915 INFO: 当前执行第：1 条数据 第：7 次请求, 今日累计收益：0
+2021-01-30 20:08:09,512 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175630","randnum":92384,"fanqian_arr":1}
+2021-01-30 20:08:09,512 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:08:09,512 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=39bc64a19e9a6d42d833c1b78ba2b536
+2021-01-30 20:08:09,512 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175630&randnum=92384
+2021-01-30 20:08:09,512 INFO: 等待 30 秒后提交数据
+2021-01-30 20:08:40,224 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:08:40,224 INFO: 休息 10 秒 继续任务
+2021-01-30 20:08:50,229 INFO: 当前执行第：1 条数据 第：8 次请求, 今日累计收益：0
+2021-01-30 20:08:50,794 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175635","randnum":99714,"fanqian_arr":1}
+2021-01-30 20:08:50,794 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:08:50,794 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=e4cccfe9f22fdfe7906ca09279deb70d
+2021-01-30 20:08:50,794 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175635&randnum=99714
+2021-01-30 20:08:50,794 INFO: 等待 30 秒后提交数据
+2021-01-30 20:09:21,544 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:09:21,544 INFO: 休息 10 秒 继续任务
+2021-01-30 20:09:31,546 INFO: 当前执行第：1 条数据 第：9 次请求, 今日累计收益：0
+2021-01-30 20:09:32,024 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175636","randnum":83747,"fanqian_arr":1}
+2021-01-30 20:09:32,024 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:09:32,024 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=74b632a4e67b1fcc3f4aacc63120dc98
+2021-01-30 20:09:32,024 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175636&randnum=83747
+2021-01-30 20:09:32,024 INFO: 等待 30 秒后提交数据
+2021-01-30 20:10:02,874 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:10:02,874 INFO: 休息 10 秒 继续任务
+2021-01-30 20:10:12,875 INFO: 当前执行第：1 条数据 第：10 次请求, 今日累计收益：0
+2021-01-30 20:10:13,386 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175639","randnum":90782,"fanqian_arr":1}
+2021-01-30 20:10:13,386 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:10:13,386 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=c371888221dd98e993a3c44ff3dba096
+2021-01-30 20:10:13,386 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175639&randnum=90782
+2021-01-30 20:10:13,386 INFO: 等待 30 秒后提交数据
+2021-01-30 20:10:44,152 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:10:44,152 INFO: 休息 10 秒 继续任务
+2021-01-30 20:10:54,167 INFO: 当前执行第：1 条数据 第：11 次请求, 今日累计收益：1
+2021-01-30 20:10:54,664 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175642","randnum":89368,"fanqian_arr":1}
+2021-01-30 20:10:54,665 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:10:54,665 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=913f32d1e35529a1ace5e75d41ed482d
+2021-01-30 20:10:54,665 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175642&randnum=89368
+2021-01-30 20:10:54,665 INFO: 等待 30 秒后提交数据
+2021-01-30 20:11:25,346 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:11:25,346 INFO: 休息 10 秒 继续任务
+2021-01-30 20:11:35,356 INFO: 当前执行第：1 条数据 第：12 次请求, 今日累计收益：1
+2021-01-30 20:11:35,873 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175645","randnum":16052,"fanqian_arr":1}
+2021-01-30 20:11:35,873 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:11:35,874 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b7e9b822359eb6af1fe0a30545d86b42
+2021-01-30 20:11:35,874 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175645&randnum=16052
+2021-01-30 20:11:35,874 INFO: 等待 30 秒后提交数据
+2021-01-30 20:12:06,610 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:12:06,611 INFO: 休息 10 秒 继续任务
+2021-01-30 20:12:16,620 INFO: 当前执行第：1 条数据 第：13 次请求, 今日累计收益：1
+2021-01-30 20:12:17,115 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175646","randnum":78013,"fanqian_arr":1}
+2021-01-30 20:12:17,115 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:12:17,115 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=4abefe4d4057472a1e238808eda1a052
+2021-01-30 20:12:17,115 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175646&randnum=78013
+2021-01-30 20:12:17,115 INFO: 等待 30 秒后提交数据
+2021-01-30 20:12:47,830 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:12:47,830 INFO: 休息 10 秒 继续任务
+2021-01-30 20:12:57,837 INFO: 当前执行第：1 条数据 第：14 次请求, 今日累计收益：1
+2021-01-30 20:12:58,357 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175647","randnum":23869,"fanqian_arr":1}
+2021-01-30 20:12:58,357 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:12:58,357 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=aedb6e82777d1ea1c1a6b0e7994df430
+2021-01-30 20:12:58,357 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175647&randnum=23869
+2021-01-30 20:12:58,357 INFO: 等待 30 秒后提交数据
+2021-01-30 20:13:28,919 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 20:13:38,924 INFO: 当前执行第：1 条数据 第：15 次请求, 今日累计收益：1
+2021-01-30 20:13:39,889 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175649","randnum":88458,"fanqian_arr":1}
+2021-01-30 20:13:39,889 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:13:39,890 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=5d3c0514a85cb0d82d3b5dde74dd910f
+2021-01-30 20:13:39,890 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175649&randnum=88458
+2021-01-30 20:13:39,890 INFO: 等待 30 秒后提交数据
+2021-01-30 20:14:10,487 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 20:14:20,490 INFO: 当前执行第：1 条数据 第：16 次请求, 今日累计收益：1
+2021-01-30 20:14:21,016 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175651","randnum":36582,"fanqian_arr":1}
+2021-01-30 20:14:21,016 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:14:21,016 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6642db3dd40b9982f474b8d283423d23
+2021-01-30 20:14:21,016 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175651&randnum=36582
+2021-01-30 20:14:21,017 INFO: 等待 30 秒后提交数据
+2021-01-30 20:31:52,574 INFO: 0.11
+2021-01-30 20:32:51,491 INFO: 任务开始..
+2021-01-30 20:32:51,492 INFO: 读取账号数据..
+2021-01-30 20:32:51,492 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0
+2021-01-30 20:32:52,086 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175695","randnum":69796,"fanqian_arr":1}
+2021-01-30 20:32:52,086 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:32:52,086 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=f112eaab9464e22a210fff3be10f5b82
+2021-01-30 20:32:52,086 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175695&randnum=69796
+2021-01-30 20:32:52,086 INFO: 等待 30 秒后提交数据
+2021-01-30 20:33:22,846 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:33:22,847 INFO: 休息 10 秒 继续任务
+2021-01-30 20:33:32,861 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0
+2021-01-30 20:33:33,383 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175697","randnum":43069,"fanqian_arr":1}
+2021-01-30 20:33:33,383 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:33:33,383 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b30c20304cb54bce60a35745788a3464
+2021-01-30 20:33:33,383 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175697&randnum=43069
+2021-01-30 20:33:33,383 INFO: 等待 30 秒后提交数据
+2021-01-30 20:34:04,177 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:34:04,177 INFO: 休息 10 秒 继续任务
+2021-01-30 20:34:16,887 INFO: 任务开始..
+2021-01-30 20:34:16,887 INFO: 读取账号数据..
+2021-01-30 20:34:16,887 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0.000000
+2021-01-30 20:34:17,399 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175698","randnum":44200,"fanqian_arr":1}
+2021-01-30 20:34:17,399 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:34:17,399 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=cb9be88639f75d95471f5e6c4e4626a2
+2021-01-30 20:34:17,399 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175698&randnum=44200
+2021-01-30 20:34:17,399 INFO: 等待 30 秒后提交数据
+2021-01-30 20:34:48,198 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:34:48,198 INFO: 休息 10 秒 继续任务
+2021-01-30 20:34:58,199 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0.110000
+2021-01-30 20:34:58,691 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175699","randnum":65964,"fanqian_arr":1}
+2021-01-30 20:34:58,691 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:34:58,691 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=559df97508d3aa725010e0f5ab3f9938
+2021-01-30 20:34:58,691 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175699&randnum=65964
+2021-01-30 20:34:58,691 INFO: 等待 30 秒后提交数据
+2021-01-30 20:35:29,455 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:35:29,455 INFO: 休息 10 秒 继续任务
+2021-01-30 20:35:39,467 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0.220000
+2021-01-30 20:35:39,971 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175700","randnum":57429,"fanqian_arr":1}
+2021-01-30 20:35:39,971 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:35:39,971 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=58a8ffc78f2952f5cde9109f8109c6eb
+2021-01-30 20:35:39,971 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175700&randnum=57429
+2021-01-30 20:35:39,971 INFO: 等待 30 秒后提交数据
+2021-01-30 20:38:00,843 INFO: 任务开始..
+2021-01-30 20:38:00,844 INFO: 读取账号数据..
+2021-01-30 20:38:00,844 INFO: 当前执行第：1 条数据 第：1 次请求, 今日累计收益：0.000
+2021-01-30 20:38:01,378 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175702","randnum":86970,"fanqian_arr":1}
+2021-01-30 20:38:01,378 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:38:01,378 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=61804b0cc9481229699e59386029ee3b
+2021-01-30 20:38:01,378 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175702&randnum=86970
+2021-01-30 20:38:01,378 INFO: 等待 30 秒后提交数据
+2021-01-30 20:38:32,258 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:38:32,258 INFO: 休息 10 秒 继续任务
+2021-01-30 20:38:42,265 INFO: 当前执行第：1 条数据 第：2 次请求, 今日累计收益：0.110
+2021-01-30 20:38:42,840 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175703","randnum":91022,"fanqian_arr":1}
+2021-01-30 20:38:42,840 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:38:42,841 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=c7f75847429a083a80d2520255043eed
+2021-01-30 20:38:42,841 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175703&randnum=91022
+2021-01-30 20:38:42,841 INFO: 等待 30 秒后提交数据
+2021-01-30 20:39:13,730 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:39:13,730 INFO: 休息 10 秒 继续任务
+2021-01-30 20:39:23,735 INFO: 当前执行第：1 条数据 第：3 次请求, 今日累计收益：0.220
+2021-01-30 20:39:24,257 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175704","randnum":41487,"fanqian_arr":1}
+2021-01-30 20:39:24,257 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:39:24,257 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7286805feb989768047eccaebb4074a4
+2021-01-30 20:39:24,257 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175704&randnum=41487
+2021-01-30 20:39:24,257 INFO: 等待 30 秒后提交数据
+2021-01-30 20:39:55,121 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:39:55,121 INFO: 休息 10 秒 继续任务
+2021-01-30 20:40:05,131 INFO: 当前执行第：1 条数据 第：4 次请求, 今日累计收益：0.330
+2021-01-30 20:40:05,683 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175706","randnum":70716,"fanqian_arr":1}
+2021-01-30 20:40:05,683 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:40:05,683 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=aa4e0f19a819adc0528cbc59302b270d
+2021-01-30 20:40:05,684 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175706&randnum=70716
+2021-01-30 20:40:05,684 INFO: 等待 30 秒后提交数据
+2021-01-30 20:40:51,042 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:44秒. 入账:0.11元。 '
+2021-01-30 20:40:51,042 INFO: 休息 10 秒 继续任务
+2021-01-30 20:41:01,043 INFO: 当前执行第：1 条数据 第：5 次请求, 今日累计收益：0.440
+2021-01-30 20:41:01,563 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175708","randnum":19286,"fanqian_arr":1}
+2021-01-30 20:41:01,563 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:41:01,563 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=af8bdeaac1e957e8c8515365a5c71182
+2021-01-30 20:41:01,563 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175708&randnum=19286
+2021-01-30 20:41:01,563 INFO: 等待 30 秒后提交数据
+2021-01-30 20:41:32,343 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:41:32,343 INFO: 休息 10 秒 继续任务
+2021-01-30 20:41:42,356 INFO: 当前执行第：1 条数据 第：6 次请求, 今日累计收益：0.550
+2021-01-30 20:41:42,883 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175714","randnum":48939,"fanqian_arr":1}
+2021-01-30 20:41:42,884 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:41:42,884 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=0559a8499a580e5fe5611cc95e719a8d
+2021-01-30 20:41:42,884 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175714&randnum=48939
+2021-01-30 20:41:42,884 INFO: 等待 30 秒后提交数据
+2021-01-30 20:42:13,601 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:42:13,601 INFO: 休息 10 秒 继续任务
+2021-01-30 20:42:23,605 INFO: 当前执行第：1 条数据 第：7 次请求, 今日累计收益：0.660
+2021-01-30 20:42:24,164 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175716","randnum":23460,"fanqian_arr":1}
+2021-01-30 20:42:24,164 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:42:24,164 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=58dac7f4a65d81859adacbd2893d926a
+2021-01-30 20:42:24,164 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175716&randnum=23460
+2021-01-30 20:42:24,164 INFO: 等待 30 秒后提交数据
+2021-01-30 20:42:54,888 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:42:54,889 INFO: 休息 10 秒 继续任务
+2021-01-30 20:43:04,893 INFO: 当前执行第：1 条数据 第：8 次请求, 今日累计收益：0.770
+2021-01-30 20:43:05,417 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175721","randnum":41470,"fanqian_arr":1}
+2021-01-30 20:43:05,417 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:43:05,417 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=ccca526d0bbc6ba61bec73577cb6d2bd
+2021-01-30 20:43:05,417 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175721&randnum=41470
+2021-01-30 20:43:05,417 INFO: 等待 30 秒后提交数据
+2021-01-30 20:43:36,198 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:43:36,198 INFO: 休息 10 秒 继续任务
+2021-01-30 20:43:46,210 INFO: 当前执行第：1 条数据 第：9 次请求, 今日累计收益：0.880
+2021-01-30 20:43:46,724 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175726","randnum":66352,"fanqian_arr":1}
+2021-01-30 20:43:46,724 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:43:46,724 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=9c20088dc5b3770eb1a3a91dc01f8645
+2021-01-30 20:43:46,725 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175726&randnum=66352
+2021-01-30 20:43:46,725 INFO: 等待 30 秒后提交数据
+2021-01-30 20:44:17,339 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 20:44:27,350 INFO: 当前执行第：1 条数据 第：10 次请求, 今日累计收益：0.880
+2021-01-30 20:44:27,926 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175728","randnum":73099,"fanqian_arr":1}
+2021-01-30 20:44:27,926 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:44:27,927 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=900ed26c4388490b79918a803b2b1b33
+2021-01-30 20:44:27,927 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175728&randnum=73099
+2021-01-30 20:44:27,927 INFO: 等待 30 秒后提交数据
+2021-01-30 20:44:58,541 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 20:45:08,556 INFO: 当前执行第：1 条数据 第：11 次请求, 今日累计收益：0.880
+2021-01-30 20:45:09,077 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175732","randnum":16962,"fanqian_arr":1}
+2021-01-30 20:45:09,077 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:45:09,077 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=c240b8fb53cc714c9115656a0374fad6
+2021-01-30 20:45:09,077 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5Cpx9oMFROYRjGmBfVLYZ24&gucid=0&adid=175732&randnum=16962
+2021-01-30 20:45:09,078 INFO: 等待 30 秒后提交数据
+2021-01-30 20:45:39,719 ERROR: 当日任务已达上限
+2021-01-30 20:45:39,719 INFO: 当前执行第：2 条数据 第：1 次请求, 今日累计收益：0.880
+2021-01-30 20:45:40,298 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175736","randnum":42279,"fanqian_arr":1}
+2021-01-30 20:45:40,298 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:45:40,298 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=2d50e3f8de43eccf4109093a6d00af62
+2021-01-30 20:45:40,298 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175736&randnum=42279
+2021-01-30 20:45:40,298 INFO: 等待 30 秒后提交数据
+2021-01-30 20:46:11,064 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:46:11,064 INFO: 休息 10 秒 继续任务
+2021-01-30 20:46:21,076 INFO: 当前执行第：2 条数据 第：2 次请求, 今日累计收益：0.990
+2021-01-30 20:46:21,639 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175738","randnum":33379,"fanqian_arr":1}
+2021-01-30 20:46:21,640 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:46:21,640 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6b295e0f9cf3f2b7ac10c880ce705ad8
+2021-01-30 20:46:21,640 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175738&randnum=33379
+2021-01-30 20:46:21,641 INFO: 等待 30 秒后提交数据
+2021-01-30 20:46:52,408 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:46:52,408 INFO: 休息 10 秒 继续任务
+2021-01-30 20:47:02,420 INFO: 当前执行第：2 条数据 第：3 次请求, 今日累计收益：1.100
+2021-01-30 20:47:02,967 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175742","randnum":33100,"fanqian_arr":1}
+2021-01-30 20:47:02,967 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:47:02,967 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=2bdccbafd7e482485f0cb04d5cbd9197
+2021-01-30 20:47:02,967 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175742&randnum=33100
+2021-01-30 20:47:02,968 INFO: 等待 30 秒后提交数据
+2021-01-30 20:47:33,690 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:47:33,690 INFO: 休息 10 秒 继续任务
+2021-01-30 20:47:43,701 INFO: 当前执行第：2 条数据 第：4 次请求, 今日累计收益：1.210
+2021-01-30 20:47:44,225 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175745","randnum":73283,"fanqian_arr":1}
+2021-01-30 20:47:44,226 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:47:44,226 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=e96caa608b27e54d996fe63b3c09d962
+2021-01-30 20:47:44,226 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175745&randnum=73283
+2021-01-30 20:47:44,226 INFO: 等待 30 秒后提交数据
+2021-01-30 20:48:14,998 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:48:14,999 INFO: 休息 10 秒 继续任务
+2021-01-30 20:48:25,007 INFO: 当前执行第：2 条数据 第：5 次请求, 今日累计收益：1.320
+2021-01-30 20:48:25,520 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175749","randnum":57974,"fanqian_arr":1}
+2021-01-30 20:48:25,520 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:48:25,520 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=bc3feb83f383f469df41977e18a080e5
+2021-01-30 20:48:25,520 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175749&randnum=57974
+2021-01-30 20:48:25,521 INFO: 等待 30 秒后提交数据
+2021-01-30 20:48:56,256 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:48:56,256 INFO: 休息 10 秒 继续任务
+2021-01-30 20:49:06,257 INFO: 当前执行第：2 条数据 第：6 次请求, 今日累计收益：1.430
+2021-01-30 20:49:06,747 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175753","randnum":14575,"fanqian_arr":1}
+2021-01-30 20:49:06,747 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:49:06,747 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=f119c05ac719b2f7076ab08af5cfeb96
+2021-01-30 20:49:06,747 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175753&randnum=14575
+2021-01-30 20:49:06,747 INFO: 等待 30 秒后提交数据
+2021-01-30 20:49:37,481 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:49:37,481 INFO: 休息 10 秒 继续任务
+2021-01-30 20:49:47,486 INFO: 当前执行第：2 条数据 第：7 次请求, 今日累计收益：1.540
+2021-01-30 20:49:47,977 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175755","randnum":47157,"fanqian_arr":1}
+2021-01-30 20:49:47,977 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:49:47,977 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=47ff7a8552471b729de32ea4ed888c39
+2021-01-30 20:49:47,978 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175755&randnum=47157
+2021-01-30 20:49:47,978 INFO: 等待 30 秒后提交数据
+2021-01-30 20:50:18,745 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:50:18,745 INFO: 休息 10 秒 继续任务
+2021-01-30 20:50:28,760 INFO: 当前执行第：2 条数据 第：8 次请求, 今日累计收益：1.650
+2021-01-30 20:50:29,329 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175758","randnum":45136,"fanqian_arr":1}
+2021-01-30 20:50:29,330 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:50:29,330 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=026d3e75435ac53f9fea2ec4dd165519
+2021-01-30 20:50:29,330 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175758&randnum=45136
+2021-01-30 20:50:29,330 INFO: 等待 30 秒后提交数据
+2021-01-30 20:51:38,386 INFO: 此次完成，返回：'看完'
+2021-01-30 20:51:38,386 INFO: 休息 10 秒 继续任务
+2021-01-30 20:51:48,401 INFO: 当前执行第：2 条数据 第：9 次请求, 今日累计收益：1.760
+2021-01-30 20:51:49,013 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175761","randnum":70617,"fanqian_arr":1}
+2021-01-30 20:51:49,013 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:51:49,013 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=973861dce5ff6cc31ebc0ea62e6958d1
+2021-01-30 20:51:49,014 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175761&randnum=70617
+2021-01-30 20:51:49,014 INFO: 等待 30 秒后提交数据
+2021-01-30 20:52:19,743 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:52:19,744 INFO: 休息 10 秒 继续任务
+2021-01-30 20:52:29,753 INFO: 当前执行第：2 条数据 第：10 次请求, 今日累计收益：1.870
+2021-01-30 20:52:30,250 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175765","randnum":63887,"fanqian_arr":1}
+2021-01-30 20:52:30,250 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:52:30,250 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7617c63cad391208a48bf1bbf7636350
+2021-01-30 20:52:30,250 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175765&randnum=63887
+2021-01-30 20:52:30,250 INFO: 等待 30 秒后提交数据
+2021-01-30 20:53:01,083 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:53:01,084 INFO: 休息 10 秒 继续任务
+2021-01-30 20:53:11,099 INFO: 当前执行第：2 条数据 第：11 次请求, 今日累计收益：1.980
+2021-01-30 20:53:11,601 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175766","randnum":19908,"fanqian_arr":1}
+2021-01-30 20:53:11,602 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:53:11,602 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=59c71b0aafb87c46adc678b3190cc46b
+2021-01-30 20:53:11,602 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175766&randnum=19908
+2021-01-30 20:53:11,602 INFO: 等待 30 秒后提交数据
+2021-01-30 20:53:42,350 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:53:42,350 INFO: 休息 10 秒 继续任务
+2021-01-30 20:53:52,365 INFO: 当前执行第：2 条数据 第：12 次请求, 今日累计收益：2.090
+2021-01-30 20:53:52,885 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175770","randnum":55824,"fanqian_arr":1}
+2021-01-30 20:53:52,885 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:53:52,885 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=7e38ed2f20e9c37103577747487c002c
+2021-01-30 20:53:52,885 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175770&randnum=55824
+2021-01-30 20:53:52,885 INFO: 等待 30 秒后提交数据
+2021-01-30 20:54:23,605 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:54:23,605 INFO: 休息 10 秒 继续任务
+2021-01-30 20:54:33,616 INFO: 当前执行第：2 条数据 第：13 次请求, 今日累计收益：2.200
+2021-01-30 20:54:34,114 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175772","randnum":49793,"fanqian_arr":1}
+2021-01-30 20:54:34,114 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:54:34,114 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=ba32064c32bb0ab0009e576726e47b12
+2021-01-30 20:54:34,115 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175772&randnum=49793
+2021-01-30 20:54:34,115 INFO: 等待 30 秒后提交数据
+2021-01-30 20:55:04,848 INFO: 此次完成，返回：'[收益通知]视频号id:513 来源: 在繁华里自律，在落魄里自励 耗时:31秒. 入账:0.11元。 '
+2021-01-30 20:55:04,849 INFO: 休息 10 秒 继续任务
+2021-01-30 20:55:14,858 INFO: 当前执行第：2 条数据 第：14 次请求, 今日累计收益：2.310
+2021-01-30 20:55:15,350 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175777","randnum":99958,"fanqian_arr":1}
+2021-01-30 20:55:15,350 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:55:15,350 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=c658364fc1e21463a0c49780b8789bc8
+2021-01-30 20:55:15,350 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175777&randnum=99958
+2021-01-30 20:55:15,350 INFO: 等待 30 秒后提交数据
+2021-01-30 20:55:45,881 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 20:55:55,887 INFO: 当前执行第：2 条数据 第：15 次请求, 今日累计收益：2.310
+2021-01-30 20:55:56,383 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175780","randnum":61390,"fanqian_arr":1}
+2021-01-30 20:55:56,383 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:55:56,383 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=3f563e147908df0f768b963347ca9ce7
+2021-01-30 20:55:56,383 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175780&randnum=61390
+2021-01-30 20:55:56,383 INFO: 等待 30 秒后提交数据
+2021-01-30 20:56:26,910 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 20:56:36,915 INFO: 当前执行第：2 条数据 第：16 次请求, 今日累计收益：2.310
+2021-01-30 20:56:37,424 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175782","randnum":77686,"fanqian_arr":1}
+2021-01-30 20:56:37,425 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:56:37,425 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=df6a21709de0ef62430ffd0ba7fe0d0c
+2021-01-30 20:56:37,425 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fMj68jWYtrfdWVfMfhvUyk&gucid=&id=385&f_from=513&adid=175782&randnum=77686
+2021-01-30 20:56:37,425 INFO: 等待 30 秒后提交数据
+2021-01-30 20:57:07,924 ERROR: 当日任务已达上限
+2021-01-30 20:57:07,924 INFO: 当前执行第：3 条数据 第：1 次请求, 今日累计收益：2.310
+2021-01-30 20:57:08,420 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175784","randnum":87488,"fanqian_arr":1}
+2021-01-30 20:57:08,420 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:57:08,421 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=f912c6b34d4661a90ddc02a7f61cb2a3
+2021-01-30 20:57:08,421 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175784&randnum=87488
+2021-01-30 20:57:08,421 INFO: 等待 30 秒后提交数据
+2021-01-30 20:57:38,969 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：1
+2021-01-30 20:57:48,971 INFO: 当前执行第：3 条数据 第：2 次请求, 今日累计收益：2.310
+2021-01-30 20:57:49,443 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175785","randnum":97909,"fanqian_arr":1}
+2021-01-30 20:57:49,443 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:57:49,443 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=6165bbfa2101aafd2670b2b2fb0ae7c4
+2021-01-30 20:57:49,443 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175785&randnum=97909
+2021-01-30 20:57:49,443 INFO: 等待 30 秒后提交数据
+2021-01-30 20:58:20,041 ERROR: 当前提交数据返回【】，等待 10 秒后重试，已重试次数：2
+2021-01-30 20:58:30,056 INFO: 当前执行第：3 条数据 第：3 次请求, 今日累计收益：2.310
+2021-01-30 20:58:30,630 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175786","randnum":88129,"fanqian_arr":1}
+2021-01-30 20:58:30,630 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:58:30,630 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=1803&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=528a967cccb2001e65dcfef42669841c
+2021-01-30 20:58:30,630 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=oxh0i5fef3RkvgEol976GUasnH6w&gucid=&id=385&f_from=513&adid=175786&randnum=88129
+2021-01-30 20:58:30,630 INFO: 等待 30 秒后提交数据
+2021-01-30 20:59:01,184 ERROR: 当日任务已达上限
+2021-01-30 20:59:01,184 INFO: 当前执行第：4 条数据 第：1 次请求, 今日累计收益：2.310
+2021-01-30 20:59:01,677 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175788","randnum":51854,"fanqian_arr":1}
+2021-01-30 20:59:01,677 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:59:01,678 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=5bf6008ec7fb4e667a814a706659fcf8
+2021-01-30 20:59:01,678 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5PB3CDwqMoQg9g8nDARZbUY&gucid=0&adid=175788&randnum=51854
+2021-01-30 20:59:01,678 INFO: 等待 30 秒后提交数据
+2021-01-30 20:59:32,424 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 20:59:32,424 INFO: 休息 10 秒 继续任务
+2021-01-30 20:59:42,435 INFO: 当前执行第：4 条数据 第：2 次请求, 今日累计收益：2.420
+2021-01-30 20:59:42,930 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175789","randnum":49513,"fanqian_arr":1}
+2021-01-30 20:59:42,930 INFO: 构造提交所用的网址和数据..
+2021-01-30 20:59:42,930 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=680accbaab0c305474fa08c8312d0e34
+2021-01-30 20:59:42,931 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5PB3CDwqMoQg9g8nDARZbUY&gucid=0&adid=175789&randnum=49513
+2021-01-30 20:59:42,931 INFO: 等待 30 秒后提交数据
+2021-01-30 21:00:13,706 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:30秒. 入账:0.11元。 '
+2021-01-30 21:00:13,706 INFO: 休息 10 秒 继续任务
+2021-01-30 21:00:23,712 INFO: 当前执行第：4 条数据 第：3 次请求, 今日累计收益：2.530
+2021-01-30 21:00:24,213 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175792","randnum":51362,"fanqian_arr":1}
+2021-01-30 21:00:24,213 INFO: 构造提交所用的网址和数据..
+2021-01-30 21:00:24,213 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=ccde736f96288ceb373c1612106d6413
+2021-01-30 21:00:24,213 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5PB3CDwqMoQg9g8nDARZbUY&gucid=0&adid=175792&randnum=51362
+2021-01-30 21:00:24,213 INFO: 等待 30 秒后提交数据
+2021-01-30 21:00:55,027 INFO: 此次完成，返回：'[收益通知] 来源:测测你最难割舍的是什么？ 耗时:31秒. 入账:0.11元。 '
+2021-01-30 21:00:55,027 INFO: 休息 10 秒 继续任务
+2021-01-30 21:01:05,028 INFO: 当前执行第：4 条数据 第：4 次请求, 今日累计收益：2.640
+2021-01-30 21:01:05,506 INFO: 获取提交所需参数成功，返回信息：{"code":1,"uid":"175796","randnum":63505,"fanqian_arr":1}
+2021-01-30 21:01:05,507 INFO: 构造提交所用的网址和数据..
+2021-01-30 21:01:05,507 INFO: 提交网址构造成功：https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=bbbdc6634d4862d0627ee855a77720ed
+2021-01-30 21:01:05,507 INFO: 提交数据构造成功：m=shenqi_pingce&xopenid=od9LS5PB3CDwqMoQg9g8nDARZbUY&gucid=0&adid=175796&randnum=63505
+2021-01-30 21:01:05,507 INFO: 等待 30 秒后提交数据
