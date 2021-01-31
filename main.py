@@ -1,4 +1,5 @@
-# coding:utf8
+#!/usr/bin/python3
+# -*- encoding=utf8 -*-
 
 # 视一视刷广告
 # By 青稞
@@ -18,4 +19,4 @@ if __name__ == '__main__':
     # interval – 请求后与提交之间的间隔时间，默认30秒
     # retryInterval – 重试提交或第二次提交间隔时间，默认10秒
     # retry – 提交返回空后重试次数，默认3次
-    start_tool.missionStart(sub_num=20, retry=3)
+    start_tool.missionStart(sub_num=20, retry=2)

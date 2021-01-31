@@ -1,9 +1,16 @@
+#!/usr/bin/python3
 # -*- encoding=utf8 -*-
+
+# 视一视刷广告
+# By 青稞
+# 2021-01-29 15:55:10
+
 
 import hashlib
 import http.client
 import json
 import random
+import string
 import time
 
 import requests
@@ -283,6 +290,19 @@ class brushAds(object):
         }
         requests.get(url, params=payload, headers=headers)
         logger.info('今日数据信息已推送至微信')
+
+
+
+
+
+    def get_xopenid(self):
+        results = []
+        for i in range(100):
+            result = random.sample(string.ascii_letters, 28)
+            results.append("".join(result))
+
+        for i in results:
+            print(i)
 
 
 class SKException(Exception):

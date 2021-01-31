@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+# -*- encoding=utf8 -*-
+
+# 视一视刷广告
+# By 青稞
+# 2021-01-29 15:55:10
+
 import logging
 import logging.handlers
 import os
