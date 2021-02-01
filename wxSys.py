@@ -20,7 +20,7 @@ from soupsieve.util import deprecated
 from logger import logger
 
 income = 0.0  # 累计金额
-
+submitNum = 0
 
 class brushAds(object):
     def __init__(self):
@@ -65,7 +65,7 @@ class brushAds(object):
         :param retry: 提交返回空后重试次数，默认3次
         :return: 无
         """
-        global income
+        global income, submitNum
         # 从文件读取账号数据
         # file_object = self._get_data_file()
         # # 遍历账号数据
@@ -139,10 +139,11 @@ class brushAds(object):
                     logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
             else:
                 income += 0.11
+                submitNum += 1
                 submitRes = json.loads(submitRes)
                 msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
                 msg = msg.replace('\\n', '').replace('\\', ' ')  # 多次字符串替换
-                logger.info('线程ID：%d 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', threadId, n, msg, income)
+                logger.info('此线程第：%d 次提交成功,累计提交 %d 返回信息: %s 今日累计收益：%.3f', n, submitNum, msg, income)
                 logger.info('休眠 %d 秒后继续任务', retryInterval)
             time.sleep(retryInterval)
 
