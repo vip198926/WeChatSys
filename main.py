@@ -19,6 +19,7 @@ if __name__ == '__main__':
     file_name = 'data.txt'  # 数据文件名
     thread_num = 5  # 线程数量
 
+    logger.info('------任务开始-------->..')
     start_tool = brushAds()  # 初始化
     start_time = time.time()  # 起始时间
     p = Partition(file_name, thread_num)
@@ -36,4 +37,4 @@ if __name__ == '__main__':
     end_time = time.time()  # 结束时间
     start_tool.send_wechat()
 
-    logger.info("全部任务完成，用时：%f" % (end_time - start_time))
+    logger.info("全部任务完成，用时：%f 分" % ((end_time - start_time)/60))

@@ -24,7 +24,7 @@ class Reader(threading.Thread):
         self.start_tool = brushAds()
 
     def run(self):
-        fd = open(self.file_name, 'r')
+        fd = open(self.file_name, 'r', encoding='UTF-8')
         '''
         该if块主要判断分块后的文件块的首位置是不是行首，
         是行首的话，不做处理

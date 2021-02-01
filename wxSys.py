@@ -20,12 +20,10 @@ from soupsieve.util import deprecated
 from logger import logger
 
 income = 0.0  # 累计金额
-# m = 0  # 账号数量
 
 
 class brushAds(object):
     def __init__(self):
-
         # self.missionStart()
         self.requestURL = ""  # 请求网址
         self.requestData = ""  # 请求数据
@@ -33,14 +31,18 @@ class brushAds(object):
         self.submitData = ""  # 提交数据
         self.randnum = ""  # 提交数据中用到的参数randnum
         self.adid = ""  # 提交数据中用到的参数adid
-        self.income = 0.0  # 计数收益
-        self.line = ''
+        # self.income = 0.0  # 计数收益
+        # self.line = ''
 
-    def missionStart(self, line, start_num):
+    def missionStart(self, line, threadId):
         """
-        开始任务
+        立即开始任务
+
+        :param line: 网址和post数据
+        :param threadId: 线程ID
+        :return:
         """
-        self._missionStart(line, start_num, sub_num=20, retry=1)
+        self._missionStart(line, threadId, sub_num=20, retry=1)
 
     @deprecated
     def start_by_proc_pool(self, work_count=5):
@@ -53,17 +55,17 @@ class brushAds(object):
                 pool.submit(self.missionStart)
                 time.sleep(1)
 
-    def _missionStart(self, line, start_num, sub_num=20, retry=3):
+    def _missionStart(self, line, threadId, sub_num=20, retry=3):
         """
-        开始任务执行
+        执行具体任务
 
+        :param line: 网址和post数据
+        :param threadId: 线程ID
         :param sub_num: 提交次数，默认20次
         :param retry: 提交返回空后重试次数，默认3次
         :return: 无
         """
         global income
-        m = start_num
-        logger.info('任务开始..')
         # 从文件读取账号数据
         # file_object = self._get_data_file()
         # # 遍历账号数据
@@ -79,7 +81,7 @@ class brushAds(object):
         i = 0  # 提交返回空计数(任务上限后返回空)
         while n < sub_num:
             n += 1
-            logger.info('线程ID：%d 第：%d 次请求, 今日累计收益：%.3f', m, n, income)
+            # logger.info('线程ID：%d 第：%d 次请求, 今日累计收益：%.3f', threadId, n, income)
             # 请求广告接口，返回提交所需要的参数uid,randnum
             while True:
                 try:
@@ -131,7 +133,7 @@ class brushAds(object):
             if submitRes == '':
                 i += 1
                 if i >= retry:
-                    logger.warn('线程ID：%d 今日任务已达上限', m)
+                    logger.warn('线程ID：%d 今日任务已达上限', threadId)
                     break
                 else:
                     logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
@@ -140,13 +142,14 @@ class brushAds(object):
                 submitRes = json.loads(submitRes)
                 msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
                 msg = msg.replace('\\n', '').replace('\\', ' ')  # 多次字符串替换
-                logger.info('线程ID：%d 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', m, n, msg, income)
+                logger.info('线程ID：%d 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', threadId, n, msg, income)
                 logger.info('休眠 %d 秒后继续任务', retryInterval)
             time.sleep(retryInterval)
 
     def _ConsReqParameters(self, url, data):
         """
         构造提交所用的网址和数据
+
         :param url: 原请求网址，从文件所获取
         :param data: 原请求数据，从文件所获取
         :return: 构造成功True，失败False
@@ -159,13 +162,13 @@ class brushAds(object):
         # print str1.index(str2);  # 结果5
         # print str1[:str1.index(str2)]  # 获取 "."之前的字符(不包含点)  结果 Hello
         # print str1[str1.index(str2):];  # 获取 "."之前的字符(包含点) 结果.python
-        urlTmp = url[:url.index('sign')]  # 获取 "sign"之前的字符(不包含sign)
-        # print('urlTmp:', urlTmp)
-        url = urlTmp + 'sign=' + self._md5()
+        # urlTmp = url[:url.index('sign')]  # 获取 "sign"之前的字符(不包含sign)
+        # # print('urlTmp:', urlTmp)
+        # url = urlTmp + 'sign=' + self._md5()
         # print('url:', url)
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_addtemp&&sign=26183073f9cc2ac03a32275e47c63094
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b80be4affe90aa5fd5afc199690f68a8
-        self.submitURL = url.replace('doujin_addtemp', 'doujin_kanwanad')
+        self.submitURL = url.replace('doujin_addtemp', 'doujin_kanwanad')  # 字符串替换
         # print('submitURL', self.submitURL)
         # logger.info('提交网址构造成功：' + self.submitURL)
         # logger.info('提交网址构造成功')
@@ -218,6 +221,7 @@ class brushAds(object):
     def _webpage_visit(self, url, data):
         """
         post 网页访问
+
         :param url: 网址
         :param data: post 数据
         :return: true/false
@@ -236,6 +240,9 @@ class brushAds(object):
             'Accept-Language': 'zh-cn'
         }
 
+        urlTmp = url[:url.index('sign')]  # 获取 "sign"之前的字符(不包含sign)
+        url = urlTmp + 'sign=' + self._md5()  # 变换sign的值
+
         while True:
             try:
                 conn.request("POST", url, payload, headers)
@@ -250,6 +257,7 @@ class brushAds(object):
     def _md5(self):
         """
         从指定字符中取出一定数量的字符MD5加密成32位
+
         :return: 返回MD5加密后的32位字符
         """
         # 先从多个字符中选取指定数量的字符组成新字符串
@@ -273,15 +281,18 @@ class brushAds(object):
     def _GetMiddleStr(self, content, startStr, endStr):
         """
         根据开头和结尾字符串获取中间字符串的方法
+
         :param content:原字符串
         :param startStr:开始字符串
         :param endStr:结尾字符串
         :return: 提取出来的字符串
         """
+
         # content：<div class="a">提取的字符串</div>
         # startStr：<div class="a">
         # endStr：</div>
         # 返回结果：提取的字符串
+
         startIndex = content.index(startStr)
         if startIndex >= 0:
             startIndex += len(startStr)
@@ -290,9 +301,15 @@ class brushAds(object):
 
     def send_wechat(self):
         # 跑完后把累计收益推送到微信
+        """
+        把累计收益推送到微信
+
+        :return: 无
+        """
         while True:
             try:
                 message = '今日任务完成，累计收益: ' + str(format(income, '.3f'))
+                logger.warn(message)
                 self._send_wechat(message)
                 break
             except Exception as e:
@@ -320,6 +337,11 @@ class brushAds(object):
         logger.info('今日数据信息已推送至微信')
 
     def _get_xopenid(self):
+        """
+        生成 xopenid
+
+        :return:
+        """
         results = []
         for i in range(100):
             result = random.sample(string.ascii_letters, 28)
