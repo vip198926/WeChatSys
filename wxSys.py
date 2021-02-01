@@ -112,10 +112,10 @@ class brushAds(object):
             # print('提交数据：', self.submitData)
 
             # 再次或重试请求间隔
-            retryInterval = random.randint(5, 10)
+            retryInterval = random.randint(10, 15)
             if makeRes:
                 # 随机延迟15-30秒
-                interval = random.randint(20, 30)
+                interval = random.randint(32, 55)
                 logger.info('休眠 %d 秒后提交数据', interval)
                 time.sleep(interval)
                 while True:
