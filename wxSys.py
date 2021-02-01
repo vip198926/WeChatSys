@@ -12,10 +12,15 @@ import json
 import random
 import string
 import time
+from concurrent.futures.process import ProcessPoolExecutor
 
 import requests
+from soupsieve.util import deprecated
 
 from logger import logger
+
+income = 0.0  # 累计金额
+# m = 0  # 账号数量
 
 
 class brushAds(object):
@@ -29,8 +34,26 @@ class brushAds(object):
         self.randnum = ""  # 提交数据中用到的参数randnum
         self.adid = ""  # 提交数据中用到的参数adid
         self.income = 0.0  # 计数收益
+        self.line = ''
 
-    def missionStart(self, sub_num=20, retry=3):
+    def missionStart(self, line, start_num):
+        """
+        开始任务
+        """
+        self._missionStart(line, start_num, sub_num=20, retry=1)
+
+    @deprecated
+    def start_by_proc_pool(self, work_count=5):
+        """
+        多进程进行抢购
+        work_count：进程数量
+        """
+        with ProcessPoolExecutor(work_count) as pool:
+            for i in range(work_count):
+                pool.submit(self.missionStart)
+                time.sleep(1)
+
+    def _missionStart(self, line, start_num, sub_num=20, retry=3):
         """
         开始任务执行
 
@@ -38,98 +61,90 @@ class brushAds(object):
         :param retry: 提交返回空后重试次数，默认3次
         :return: 无
         """
+        global income
+        m = start_num
         logger.info('任务开始..')
         # 从文件读取账号数据
-        file_object = self.get_data_file()
-        # 遍历账号数据
-        m = 0.0  # 账号计数
-        for line in file_object:
-            m += 1
-            # print(line)
-            # 从账号数据中分割出请求的网址和表求的post数据
-            data = line.split("----")
-            self.requestURL = data[0]  # 请求网址
-            self.requestData = data[1]  # 请求数据
-            # print(self.requestURL)
-            # print(self.requestData)
-            n = 0  # 提交次数计数
-            i = 0  # 提交返回空计数(任务上限后返回空)
-            while n < sub_num:
-                n += 1
-                logger.info('当前执行第：%d 条数据 第：%d 次请求, 今日累计收益：%.3f', m, n, self.income)
-                # 请求广告接口，返回提交所需要的参数uid,randnum
+        # file_object = self._get_data_file()
+        # # 遍历账号数据
+        # for line in file_object:
+        # print(line)
+        # 从账号数据中分割出请求的网址和表求的post数据
+        data = line.split("----")
+        self.requestURL = data[0]  # 请求网址
+        self.requestData = data[1]  # 请求数据
+        # print(self.requestURL)
+        # print(self.requestData)
+        n = 0  # 提交次数计数
+        i = 0  # 提交返回空计数(任务上限后返回空)
+        while n < sub_num:
+            n += 1
+            logger.info('线程ID：%d 第：%d 次请求, 今日累计收益：%.3f', m, n, income)
+            # 请求广告接口，返回提交所需要的参数uid,randnum
+            while True:
+                try:
+                    res = self._webpage_visit(self.requestURL, self.requestData)
+                    break
+                except Exception as e:
+                    logger.error('请求数据发生异常,异常信息【%s】稍后重试..', str(e))
+                time.sleep(random.randint(1, 2))
+
+            # print(res)
+            if res == '':
+                logger.error("获取提交所需参数失败，返回信息：【】")
+                # break 语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。
+                # continue 语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
+                continue
+
+            # logger.info("获取提交所需参数成功，返回信息：" + res)
+            # logger.info('获取提交所需参数成功')
+            # 将返回的json 数据 res 转换成表
+            s = json.loads(res)
+            # 提取提交所需要的adid和randnum
+            self.randnum = s['randnum']
+            self.adid = s['uid']
+            # print(self.randnum, self.adid)
+            # 构造提交所需要的网址和post数据 成功True,失败False
+            makeRes = self._ConsReqParameters(self.requestURL, self.requestData)
+            # print('提交网址：', self.submitURL)
+            # print('提交数据：', self.submitData)
+
+            # 再次或重试请求间隔
+            retryInterval = random.randint(5, 10)
+            if makeRes:
+                # 随机延迟15-30秒
+                interval = random.randint(20, 30)
+                logger.info('休眠 %d 秒后提交数据', interval)
+                time.sleep(interval)
                 while True:
                     try:
-                        res = self.webpage_visit(self.requestURL, self.requestData)
+                        submitRes = self._webpage_visit(self.submitURL, self.submitData)
                         break
                     except Exception as e:
-                        logger.error('请求数据发生异常,异常信息【%s】稍后重试..', str(e))
+                        logger.error('提交数据发生异常,异常信息【%s】稍后重试..', str(e))
                     time.sleep(random.randint(1, 2))
-
-                # print(res)
-                if res is None:
-                    logger.error("获取提交所需参数失败，返回信息：【】")
-                    # break 语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。
-                    # continue 语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
-                    continue
-
-                # logger.info("获取提交所需参数成功，返回信息：" + res)
-                # logger.info('获取提交所需参数成功')
-                # 将返回的json 数据 res 转换成表
-                s = json.loads(res)
-                # 提取提交所需要的adid和randnum
-                self.randnum = s['randnum']
-                self.adid = s['uid']
-                # print(self.randnum, self.adid)
-                # 构造提交所需要的网址和post数据 成功True,失败False
-                makeRes = self.ConsReqParameters(self.requestURL, self.requestData)
-                # print('提交网址：', self.submitURL)
-                # print('提交数据：', self.submitData)
-
-                # 再次或重试请求间隔
-                retryInterval = random.randint(5, 10)
-                if makeRes:
-                    # 随机延迟15-30秒
-                    interval = random.randint(20, 30)
-                    logger.info('休眠 %d 秒后提交数据', interval)
-                    time.sleep(interval)
-                    while True:
-                        try:
-                            submitRes = self.webpage_visit(self.submitURL, self.submitData)
-                            break
-                        except Exception as e:
-                            logger.error('提交数据发生异常,异常信息【%s】稍后重试..', str(e))
-                        time.sleep(random.randint(1, 2))
-                else:
-                    logger.info('休眠 %d 秒后尝试重试', retryInterval)
-                    time.sleep(retryInterval)
-                    continue
-
-                if submitRes == '':
-                    i += 1
-                    if i >= retry:
-                        logger.warn('当日任务已达上限')
-                        break
-                    else:
-                        logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
-                else:
-                    self.income = self.income + 0.11
-                    submitRes = json.loads(submitRes)
-                    msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
-                    msg = msg.replace('\\n', '').replace('\\', ' ')  # 多次字符串替换
-                    logger.info('第：%d 条数据 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', m, n, msg, self.income)
-                    logger.info('休眠 %d 秒后继续任务', retryInterval)
+            else:
+                logger.info('休眠 %d 秒后尝试重试', retryInterval)
                 time.sleep(retryInterval)
-        # 跑完后把累计收益推送到微信
-        while True:
-            try:
-                self.send_wechat('今日任务完成，共 ' + str(m) + ' 条数据，累计收益: ' + str(format(self.income, '.3f')))
-                break
-            except Exception as e:
-                logger.error('推送到微信发生异常,异常信息【%s】稍后重试..', str(e))
-            time.sleep(random.randint(2, 5))
+                continue
 
-    def ConsReqParameters(self, url, data):
+            if submitRes == '':
+                i += 1
+                if i >= retry:
+                    logger.warn('线程ID：%d 今日任务已达上限', m)
+                    break
+                else:
+                    logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
+            else:
+                income += 0.11
+                submitRes = json.loads(submitRes)
+                msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
+                msg = msg.replace('\\n', '').replace('\\', ' ')  # 多次字符串替换
+                logger.info('线程ID：%d 第：%d 次提交成功,返回信息: %s 今日累计收益：%.3f', m, n, msg, income)
+                logger.info('休眠 %d 秒后继续任务', retryInterval)
+            time.sleep(retryInterval)
+
+    def _ConsReqParameters(self, url, data):
         """
         构造提交所用的网址和数据
         :param url: 原请求网址，从文件所获取
@@ -144,9 +159,9 @@ class brushAds(object):
         # print str1.index(str2);  # 结果5
         # print str1[:str1.index(str2)]  # 获取 "."之前的字符(不包含点)  结果 Hello
         # print str1[str1.index(str2):];  # 获取 "."之前的字符(包含点) 结果.python
-        urlTmp = url[:url.index('sign')]
+        urlTmp = url[:url.index('sign')]  # 获取 "sign"之前的字符(不包含sign)
         # print('urlTmp:', urlTmp)
-        url = urlTmp + 'sign=' + self.md5()
+        url = urlTmp + 'sign=' + self._md5()
         # print('url:', url)
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_addtemp&&sign=26183073f9cc2ac03a32275e47c63094
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b80be4affe90aa5fd5afc199690f68a8
@@ -167,7 +182,7 @@ class brushAds(object):
             dataTmp = data[:data.index('appname=Weixin')]
             # print('dataTmp0', dataTmp)
             # 获取中间字符串 fid=318 并把它替换成空字符''
-            fid = self.GetMiddleStr(dataTmp, '&gucid=', '&id=')
+            fid = self._GetMiddleStr(dataTmp, '&gucid=', '&id=')
             dataTmp = dataTmp.replace(fid, '')  # 把dataTmp 中的fid=xxx替换成空字符
             # print('dataTmp1', dataTmp)
         elif data.find('gucid=0&') > -1:
@@ -183,7 +198,7 @@ class brushAds(object):
         # logger.info('提交数据构造成功')
         return True
 
-    def get_data_file(self):
+    def _get_data_file(self):
         """
         从文件读取账号数据
         :return:返回文件数据
@@ -200,7 +215,7 @@ class brushAds(object):
             logger.error('读取账号数据发生异常,异常信息【%s】', str(e))
             exit()
 
-    def webpage_visit(self, url, data):
+    def _webpage_visit(self, url, data):
         """
         post 网页访问
         :param url: 网址
@@ -232,7 +247,7 @@ class brushAds(object):
                 logger.error('网络访问发生异常,异常信息【%s】，正在重试..', str(e))
                 time.sleep(random.randint(1, 3))
 
-    def md5(self):
+    def _md5(self):
         """
         从指定字符中取出一定数量的字符MD5加密成32位
         :return: 返回MD5加密后的32位字符
@@ -255,7 +270,7 @@ class brushAds(object):
         # print(md5_str)
         return md5_str
 
-    def GetMiddleStr(self, content, startStr, endStr):
+    def _GetMiddleStr(self, content, startStr, endStr):
         """
         根据开头和结尾字符串获取中间字符串的方法
         :param content:原字符串
@@ -273,13 +288,26 @@ class brushAds(object):
         endIndex = content.index(endStr)
         return content[startIndex:endIndex]
 
-    def send_wechat(self, message):
+    def send_wechat(self):
+        # 跑完后把累计收益推送到微信
+        while True:
+            try:
+                message = '今日任务完成，累计收益: ' + str(format(income, '.3f'))
+                self._send_wechat(message)
+                break
+            except Exception as e:
+                logger.error('推送到微信发生异常,异常信息【%s】稍后重试..', str(e))
+            time.sleep(random.randint(2, 5))
+
+    def _send_wechat(self, message):
         """
         推送信息到微信
         :param message: 要推送的信息
         :return:
         """
+
         url = 'http://sc.ftqq.com/{}.send'.format('SCT3556TCbQX4pSjlpwLT7Oi1SUs91cG')
+
         payload = {
             "text": '今日收益',
             "desp": message
@@ -291,11 +319,7 @@ class brushAds(object):
         requests.get(url, params=payload, headers=headers)
         logger.info('今日数据信息已推送至微信')
 
-
-
-
-
-    def get_xopenid(self):
+    def _get_xopenid(self):
         results = []
         for i in range(100):
             result = random.sample(string.ascii_letters, 28)
