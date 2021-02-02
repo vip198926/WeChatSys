@@ -11,30 +11,17 @@
 
 import time
 from logger import logger
-from multiProgress import Partition, Reader
 from wxSys import brushAds
 
 if __name__ == '__main__':
-
-    file_name = 'data.txt'  # 数据文件名
-    thread_num = 5  # 线程数量
-
-    logger.info('------任务开始-------->..')
-    start_tool = brushAds()  # 初始化
     start_time = time.time()  # 起始时间
-    p = Partition(file_name, thread_num)
-    t = []
-    pos = p.part()
-    # 生成线程
-    for i in range(thread_num):
-        t.append(Reader(file_name, *pos[i]))
-    # 开启线程
-    for i in range(thread_num):
-        t[i].start()
-    for i in range(thread_num):
-        t[i].join()
+    logger.warning('------任务开始-------->..')
+    start_tool = brushAds()  # 初始化
 
-    end_time = time.time()  # 结束时间
-    start_tool.send_wechat()
+    start_tool.randomData()  # 随机生成新的数据文件
 
-    logger.info("全部任务完成，用时：%f 分" % ((end_time - start_time)/60))
+    start_tool.start_Thread()  # 启动多线程任务
+
+    start_tool.send_wechat(start_time)  # 把开始时间传给推送到微信以计算总共耗时
+
+    logger.warning('全部任务完成，停止运行')
