@@ -44,8 +44,9 @@ class brushAds(object):
         self.adid = ""  # 提交数据中用到的参数adid
 
     def _get_random_useragent(self):
-        """生成随机的UserAgent
-        :return: UserAgent字符串
+        """生成随机的User-Agent
+
+        :return: User-Agent字符串
         """
         return random.choice(USER_AGENTS)
 
@@ -95,11 +96,10 @@ class brushAds(object):
 
         :return: 无
         """
-        # 读取原数据文件
-        file_list = self._get_data_file()
+        file_list = self._get_data_file()  # 读取原数据文件
         # logger.debug('原始数据列表：%s', file_list)
         new_file_list = []
-        # 随机从原文件中取一行生成新列表 执行outputNum次
+        # 循环随机从原文件中取一行生成新列表 执行outputNum次
         for i in range(self.outputNum):
             while True:
                 try:
@@ -110,8 +110,6 @@ class brushAds(object):
                     break
                 except Exception as e:
                     logger.exception('生成新列表数据发生异常,异常信息【%s】稍后重试..', str(e))
-
-        # logger.debug('随机生成新的列表：%s', new_file_list)
 
         self._newData(new_file_list)  # 替换xopenid并写入文件
 
@@ -161,63 +159,55 @@ class brushAds(object):
         :return: 无
         """
         global income, submitNum
-        # 从文件读取账号数据
-        # file_object = self._get_data_file()
-        # # 遍历账号数据
-        # for line in file_object:
-        # logger.debug(line)
-        # 从账号数据中分割出请求的网址和表求的post数据
-        data = line.split("----")
-        self.requestURL = data[0]  # 请求网址
-        self.requestData = data[1]  # 请求数据
-        self.headers = self._get_random_useragent()
+        # 从数据中分割出请求的网址和请求的post数据
+        reqData = line.split("----")
+        self.requestURL = reqData[0]  # 请求网址
+        self.requestData = reqData[1].replace('\\n', '')  # 请求数据
+        self.headers = self._get_random_useragent()  # 生成随机的User Agent
         logger.debug(self.headers)
-        # print(self.requestURL)
-        # print(self.requestData)
+
         n = 0  # 提交次数计数
         i = 0  # 提交返回空计数(任务上限后返回空)
+
         while n < self.sub_num:
             n += 1
-            # 再次或重试请求间隔
-            retryInterval = random.randint(10, 15)
-            logger.debug('线程ID：%d 第：%d 次请求, 今日累计收益：%.3f', threadId, n, income)
+            retryInterval = random.randint(10, 15)  # 再次或重试请求间隔
+            logger.debug('线程ID：%d 第：%d 次请求', threadId, n)
             # 请求广告接口，返回提交所需要的参数uid,randnum
-            while True:
-                try:
-                    res = self._webpage_visit(self.requestURL, self.requestData)
-                    break
-                except Exception as e:
-                    logger.exception('请求数据发生异常,异常信息【%s】稍后重试..', str(e))
-                time.sleep(random.randint(1, 2))
+            resp = ''
+            try:
+                resp = self._webpage_visit(self.requestURL, self.requestData)
+                if resp.find('uid') == -1 and resp.find('randnum') == -1:
+                    resp = ''
+            except Exception as e:
+                logger.exception('请求数据发生异常,异常信息【%s】稍后重试..', str(e))
 
-            if res == '':
+            if resp == '':
                 logger.error("获取提交所需参数失败，返回信息：【】")
                 # break 语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。
                 # continue 语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
                 time.sleep(retryInterval)
                 continue
-
-            logger.debug("获取提交所需参数成功，返回信息：" + res)
-            # 将返回的json 数据 res 转换成表
-            s = json.loads(res)
+            # {"code":1,"uid":"199970","randnum":63283,"fanqian_arr":1}
+            logger.debug("获取提交所需参数成功，返回信息：" + resp)
+            # 将返回的json 数据 resp 转换成表
+            s = json.loads(resp)
             # 提取提交所需要的adid和randnum
             self.randnum = s['randnum']
             self.adid = s['uid']
             # 构造提交所需要的网址和post数据 成功True,失败False
             makeRes = self._ConsReqParameters(self.requestURL, self.requestData)
-            submitRes = None
+            submitRes = ''
             if makeRes:
                 # 随机延迟15-30秒
                 interval = random.randint(32, 55)
                 logger.info('休眠 %d 秒后提交数据', interval)
                 time.sleep(interval)
-                # while True:
+
                 try:
                     submitRes = self._webpage_visit(self.submitURL, self.submitData)
-                    # break
                 except Exception as e:
                     logger.error('提交数据发生异常,异常信息【%s】稍后重试..', str(e))
-                time.sleep(random.randint(1, 2))
 
             else:
                 logger.info('休眠 %d 秒后尝试重试', retryInterval)
@@ -232,41 +222,39 @@ class brushAds(object):
                 else:
                     logger.error('当前提交数据返回【】，休眠 %d 秒后重试，已重试次数：%d', retryInterval, i)
             else:
-                income += 0.11
                 submitNum += 1
                 submitRes = json.loads(submitRes)
                 msg = repr(submitRes['msg'])  # repr() 函数可以将字符串转换为python的原始字符串（即忽视各种特殊字符的作用）
                 msg = msg.replace('\\n', '').replace('\\', ' ').replace(' ', '').replace('\'', '')  # 多次字符串替换
-                logger.warning('此线程第：%d 次提交,累计提交：%d 累计收益：%.3f 返回:%s', n, submitNum, income, msg)
+                if msg.find('入账') > -1:
+                    income += 0.11
+                    addMoney = '有效'
+                    msg = msg[:38] + '.. ..[' + msg[-9:-1]+']'
+                else:
+                    addMoney = '无效'
+                    msg = msg
+                logger.warning('此线程第：%d 次提交 %s 累计提交：%d 累计收益：%.3f 返回:%s', n, addMoney, submitNum, income, msg)
                 logger.info('休眠 %d 秒后继续', retryInterval)
             time.sleep(retryInterval)
 
-    def _ConsReqParameters(self, url, data):
+    def _ConsReqParameters(self, reqURL, reqData):
         """
         构造提交所用的网址和数据
 
-        :param url: 原请求网址，从文件所获取
-        :param data: 原请求数据，从文件所获取
+        :param reqURL: 原请求网址，从文件所获取
+        :param reqData: 原请求数据，从文件所获取
         :return: 构造成功True，失败False
         """
-        logger.debug('构造提交所用的网址和数据..')
-
+        logger.info('构造提交所用的网址和数据..')
         # 构造提交网址
         # str1 = "Hello.python";
         # str2 = ".";
         # print str1.index(str2);  # 结果5
         # print str1[:str1.index(str2)]  # 获取 "."之前的字符(不包含点)  结果 Hello
         # print str1[str1.index(str2):];  # 获取 "."之前的字符(包含点) 结果.python
-        # urlTmp = url[:url.index('sign')]  # 获取 "sign"之前的字符(不包含sign)
-        # # print('urlTmp:', urlTmp)
-        # url = urlTmp + 'sign=' + self._md5()
-        # print('url:', url)
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_addtemp&&sign=26183073f9cc2ac03a32275e47c63094
         # https://x.zhichi921.com/app/index.php?i=8&t=0&v=1.0.2&from=wxapp&c=entry&a=wxapp&do=doujin_kanwanad&&sign=b80be4affe90aa5fd5afc199690f68a8
-        self.submitURL = url.replace('doujin_addtemp', 'doujin_kanwanad')  # 字符串替换
-        # print('submitURL', self.submitURL)
-        # logger.info('提交网址构造成功：' + self.submitURL)
-        # logger.debug('构造提交网址成功: %s',self.submitURL)
+        self.submitURL = reqURL.replace('doujin_addtemp', 'doujin_kanwanad')  # 字符串替换
         # 构造提交数据
         # m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&fid=318&appname=Weixin&now_title=%E6%BD%9C%E6%84%8F%E8%AF%86%E9%87%8C%E4%BD%A0%E6%98%AF%E5%93%AA%E7%A7%8D%E7%A5%9E%E8%AF%9D%E5%8A%A8%E7%89%A9%EF%BC%9F
         # m=shenqi_pingce&xopenid=od9LS5BrJ54EE8HIEjHUG-PDoRUI&gucid=0&adid=随机ID&randnum=随机数
@@ -275,20 +263,20 @@ class brushAds(object):
         # m=shenqi_pingce&xopenid=oxh0i5f9yapwAfMFNVhhs5tDUJ4s&gucid=&id=385&f_from=513&adid=随机ID&randnum=随机数
         # m=shenqi_pingce&xopenid=oxh0i5bDqVbe8Do74muQ-0lXeY0U&gucid=&id=385&f_from=513&adid=173636&randnum=56630
 
-        if data.find('gucid=&') > -1:
-            # 从 data 中截取appname=Weixin 左边的字符
-            dataTmp = data[:data.index('appname=Weixin')]
+        if reqData.find('gucid=&') > -1:
+            # 从 reqData 中截取appname=Weixin 左边的字符
+            dataTmp = reqData[:reqData.index('appname=Weixin')]
             # 获取中间字符串 fid=318 并把它替换成空字符''
             fid = self._GetMiddleStr(dataTmp, '&gucid=', '&id=')
             dataTmp = dataTmp.replace(fid, '')  # 把dataTmp 中的fid=xxx替换成空字符
-        elif data.find('gucid=0&') > -1:
-            dataTmp = data[:data.index('fid=')]
+        elif reqData.find('gucid=0&') > -1:
+            dataTmp = reqData[:reqData.index('fid=')]
         else:
-            logger.info('构造提交参数失败，请检查数据或试一试修改了返回值')
+            logger.error('构造提交参数失败，请检查数据或试一试修改了返回值')
             return False
         # 提交数据构造完成
         self.submitData = dataTmp + 'adid=' + str(self.adid) + '&randnum=' + str(self.randnum)
-        # logger.debug('构造提交post数据成功: %s', self.submitData)
+        logger.info('成功构造提交所用的网址和数据..')
         return True
 
     def _get_data_file(self):
@@ -313,7 +301,7 @@ class brushAds(object):
 
         :param url: 网址
         :param data: post 数据
-        :return: true/false
+        :return: 成功返回返回值，失败返回空
         """
 
         conn = http.client.HTTPSConnection("x.zhichi921.com")
@@ -334,14 +322,12 @@ class brushAds(object):
 
         try:
             conn.request("POST", url, payload, headers)
-            res = conn.getresponse()
-            data = res.read()
+            resp = conn.getresponse()
+            data = resp.read()
             return data.decode("utf-8")
         except Exception as e:
-            # raise SKException('网络访问失败，正在重试..')
             logger.exception('网络访问发生异常,异常信息【%s】', str(e))
             return ''
-            # time.sleep(random.randint(1, 3))
 
     def _md5(self):
         """
@@ -353,7 +339,7 @@ class brushAds(object):
         data = ''.join(random.sample(
             ['z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j', 'i', 'h', 'g', 'f',
              'e', 'd', 'c', 'b', 'a'], 10))
-        # data = random.randrange(0, 101, 1)
+        # reqData = random.randrange(0, 101, 1)
         # 得到md5算法对象
         hash_md5 = hashlib.md5()
         # 准备要计算md5的数据（bytes类型）
