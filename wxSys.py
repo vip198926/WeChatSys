@@ -22,7 +22,7 @@ from logger import logger
 
 income = 0.0  # 累计金额
 submitNum = 0  # 累计提交
-
+nullNum = 0  # 累计无效提交
 
 class brushAds(object):
     def __init__(self):
@@ -158,7 +158,7 @@ class brushAds(object):
         :param threadId: 线程ID
         :return: 无
         """
-        global income, submitNum
+        global income, submitNum, nullNum
         # 从数据中分割出请求的网址和请求的post数据
         reqData = line.split("----")
         self.requestURL = reqData[0]  # 请求网址
@@ -231,9 +231,10 @@ class brushAds(object):
                     addMoney = '有效'
                     msg = msg[:38] + '.. ..[' + msg[-9:-1]+']'
                 else:
+                    nullNum += 1
                     addMoney = '无效'
                     msg = msg
-                logger.warning('此线程第：%d 次提交 %s 累计提交：%d 累计收益：%.3f 返回:%s', n, addMoney, submitNum, income, msg)
+                logger.warning('第：%d 次提交 %s 累计提交：%d 无效：%d 累计收益：%.3f 返回:%s', n, addMoney, submitNum, nullNum, income, msg)
                 logger.info('休眠 %d 秒后继续', retryInterval)
             time.sleep(retryInterval)
 
@@ -386,7 +387,7 @@ class brushAds(object):
         time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         end_time = time.time()  # 结束时间
         timeCost = str(format(((end_time - start_time) / 60), '.3f'))
-        message = time_now + ' 任务完成 耗时: ' + timeCost + ' 分钟 累计执行: ' + str(submitNum) + ' 次 累计返回: ' + str(
+        message = time_now + ' 任务完成 耗时: ' + timeCost + ' 分钟 累计执行: ' + str(submitNum) + '无效：' + str(nullNum) + ' 次 累计返回: ' + str(
             format(income, '.3f'))
 
         payload = {
