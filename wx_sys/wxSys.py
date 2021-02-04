@@ -18,7 +18,7 @@ from concurrent.futures.process import ProcessPoolExecutor
 import requests
 from soupsieve.util import deprecated
 from config import global_config
-from logger import logger
+from log.logger import logger
 
 income = 0.0  # 累计金额
 submitNum = 0  # 累计提交
@@ -27,7 +27,7 @@ nullNum = 0  # 累计无效提交
 class brushAds(object):
     def __init__(self):
 
-        filePath = 'data/'
+        filePath = '../data/'
         self.oldDataPath = filePath + global_config.get('config', 'oldFileName')  # 原数据文件目标
         self.newDataPath = filePath + global_config.get('config', 'newFileName')  # 新数据文件目标
         self.thread_num = int(global_config.get('config', 'threadNum'))  # 要启动的线程数量

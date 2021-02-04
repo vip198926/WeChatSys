@@ -10,8 +10,8 @@
 
 
 import time
-from logger import logger
-from wxSys import brushAds
+from log.logger import logger
+from wx_sys.wxSys import brushAds
 
 if __name__ == '__main__':
     start_time = time.time()  # 起始时间
