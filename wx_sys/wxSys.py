@@ -11,6 +11,7 @@ import http.client
 import json
 import random
 import string
+import sys
 import threading
 import time
 from concurrent.futures.process import ProcessPoolExecutor
@@ -210,7 +211,7 @@ class brushAds(object):
                 try:
                     submitRes = self._webpage_visit(self.submitURL, self.submitData)
                 except Exception as e:
-                    logger.error('提交数据发生异常,异常信息【%s】稍后重试..', str(e))
+                    logger.exception('提交数据发生异常,异常信息【%s】稍后重试..', str(e))
 
             else:
                 logger.info('休眠 %d 秒后尝试重试', retryInterval)
@@ -296,9 +297,8 @@ class brushAds(object):
                 f.close()
             return data_file
         except Exception as e:
-            # raise SKException('读取账号数据失败')
             logger.exception('读取账号数据发生异常,异常信息【%s】', str(e))
-            exit()
+            sys.exit(0)
 
     def _webpage_visit(self, url, data):
         """
