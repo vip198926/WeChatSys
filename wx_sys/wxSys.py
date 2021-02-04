@@ -17,23 +17,26 @@ from concurrent.futures.process import ProcessPoolExecutor
 
 import requests
 from soupsieve.util import deprecated
-from config import global_config
+from wx_sys.config import global_config
 from log.logger import logger
 
 income = 0.0  # 累计金额
 submitNum = 0  # 累计提交
 nullNum = 0  # 累计无效提交
 
+
 class brushAds(object):
     def __init__(self):
 
-        filePath = '../data/'
+        filePath = 'data/'
         self.oldDataPath = filePath + global_config.get('config', 'oldFileName')  # 原数据文件目标
         self.newDataPath = filePath + global_config.get('config', 'newFileName')  # 新数据文件目标
         self.thread_num = int(global_config.get('config', 'threadNum'))  # 要启动的线程数量
         self.outputNum = int(global_config.get('config', 'outputNum'))  # 要生成新数据的数量
         self.sub_num = int(global_config.get('config', 'sub_num'))  # 提交上限次数
         self.retry = int(global_config.get('config', 'retry'))  # 提交重试次数
+        self.min = int(global_config.get('config', 'retryMin'))  # 每次请求间隔时间最小值
+        self.max = int(global_config.get('config', 'retryMax'))  # 每次请求间隔时间最大值
 
         self.headers = ''
         self.requestURL = ""  # 请求网址
@@ -171,7 +174,7 @@ class brushAds(object):
 
         while n < self.sub_num:
             n += 1
-            retryInterval = random.randint(10, 15)  # 再次或重试请求间隔
+            retryInterval = random.randint(self.min, self.max)  # 再次或重试请求间隔
             logger.debug('线程ID：%d 第：%d 次请求', threadId, n)
             # 请求广告接口，返回提交所需要的参数uid,randnum
             resp = ''
@@ -199,8 +202,8 @@ class brushAds(object):
             makeRes = self._ConsReqParameters(self.requestURL, self.requestData)
             submitRes = ''
             if makeRes:
-                # 随机延迟15-30秒
-                interval = random.randint(32, 55)
+                # 随机延迟32, 50秒
+                interval = random.randint(32, 50)
                 logger.info('休眠 %d 秒后提交数据', interval)
                 time.sleep(interval)
 
@@ -229,12 +232,13 @@ class brushAds(object):
                 if msg.find('入账') > -1:
                     income += 0.11
                     addMoney = '有效'
-                    msg = msg[:38] + '.. ..[' + msg[-9:-1]+']'
+                    msg = msg[:38] + '.. ..[' + msg[-9:-1] + ']'
                 else:
                     nullNum += 1
                     addMoney = '无效'
                     msg = msg
-                logger.warning('第：%d 次提交 %s 累计提交：%d 无效：%d 累计收益：%.3f 返回:%s', n, addMoney, submitNum, nullNum, income, msg)
+                logger.warning('第：%d 次提交 %s 累计提交：%d 无效：%d 累计收益：%.3f 返回:%s', n, addMoney, submitNum, nullNum, income,
+                               msg)
                 logger.info('休眠 %d 秒后继续', retryInterval)
             time.sleep(retryInterval)
 
@@ -387,7 +391,8 @@ class brushAds(object):
         time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         end_time = time.time()  # 结束时间
         timeCost = str(format(((end_time - start_time) / 60), '.3f'))
-        message = time_now + ' 任务完成 耗时: ' + timeCost + ' 分钟 累计执行: ' + str(submitNum) + '无效：' + str(nullNum) + ' 次 累计返回: ' + str(
+        message = time_now + ' 任务完成 耗时: ' + timeCost + ' 分钟 累计执行: ' + str(submitNum) + ' 无效：' + str(
+            nullNum) + ' 次 累计返回: ' + str(
             format(income, '.3f'))
 
         payload = {
