@@ -17,7 +17,7 @@ from wx_sys.config import global_config
 '''
 # 把获取的时间转换成"年月日格式”
 time_now = time.strftime("%Y%m%d", time.localtime())
-logs_dir = '../logs'
+logs_dir = 'logs'
 logs_name = logs_dir + '/wxSys_' + str(time_now) + '.log'
 # print(logs_dir, logs_name)
 if not os.path.exists(logs_dir):
